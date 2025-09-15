@@ -1,13 +1,13 @@
 /* Theme Style Two */
 :root .theme-style--two {
     --link-color:               #FFFFFF;
-    --link-color-hover:         #01E5E5;
-    --link-color-active:        #01E5E5;
+    --link-color-hover:         #1F4CFF;
+    --link-color-active:        #1F4CFF;
 }
 
 body.theme-style--two {
-    color: var(--color-five);
-    background-color: var(--color-black);
+    color: var(--color-white);
+    background-color: var(--color-dark);
 }
 
 .theme-style--two h1, .theme-style--two h2, .theme-style--two h3, .theme-style--two h4, .theme-style--two h5, .theme-style--two h6,
@@ -23,9 +23,7 @@ body.theme-style--two {
     color: var(--color-black);
 }
 
-.theme-style--two .header .mainnav ul.main-menu li.current > a, .theme-style--two .header .mainnav ul.main-menu li.active > a, .theme-style--two .header .mainnav ul.main-menu li:hover > a {
-    color: var(--color-six);
-}
+
 
 .theme-style--two .wptb-country-marquee-wrapper::before {
     width: 17%;

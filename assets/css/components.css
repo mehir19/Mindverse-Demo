@@ -9,7 +9,10 @@ Ready Components Stylesheet
 }
 .wptb-heading .wptb-item--subtitle {
     color: var(--color-four);
-    background-color: #ebe9fe;
+    background: #1A1D44;
+    background: -webkit-linear-gradient(90deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0.01) 100%);
+    background: -moz-linear-gradient(90deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0.01) 100%);
+    background: linear-gradient(90deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0.01) 100%);
     display: inline-block;
     font-size: var(--fs-14);
     font-weight: var(--fw-medium);
@@ -24,14 +27,31 @@ Ready Components Stylesheet
     color: var(--color-dark);
     position: relative;
     z-index: 1;
-    font-size: var(--fs-40);
+    font-size: var(--fs-60);
     line-height: 1.2;
-    letter-spacing: -2px;
+    letter-spacing: -1.6px;
     margin-bottom: 15px;
+}
+
+.wptb-heading .wptb-item--title .highlight {
+    color: #F3FF4B;
+}
+
+.wptb-heading .wptb-item--title span {
+    position: relative;
+}
+
+.wptb-heading .wptb-item--title span svg {
+    position: absolute;
+    left: 0;
+    top: 100%;
 }
 
 .wptb-heading .wptb-item--description {
     position: relative;
+    font-family: var(--font-family-heading);
+    font-size: 15px;
+    font-weight: var(--fw-medium);
     margin-top: 0px;
     margin-bottom: 0px;
     display: inline-block;
@@ -349,7 +369,7 @@ Ready Components Stylesheet
 }
 .wptb-slider .wptb-slider--item {
 	position:relative;
-	padding: 200px 0px 200px 0px;
+	padding: 200px 0px 110px 0px;
     overflow: hidden;
 }
 
@@ -383,7 +403,8 @@ Ready Components Stylesheet
 
 .wptb-slider .wptb-heading .wptb-item--title {
     font-size: 80px;
-    margin-bottom: 0px;
+    line-height: 1.15;
+    letter-spacing: -4px;
 	-webkit-transition: all 1000ms ease;
 	-moz-transition: all 1000ms ease;
 	-ms-transition: all 1000ms ease;
@@ -397,6 +418,7 @@ Ready Components Stylesheet
 }
 
 .wptb-slider .wptb-heading .wptb-item--description {
+    color: var(--color-white);
     font-size: 18px;
     line-height: 1.35em;
     letter-spacing: -0.36px;
@@ -519,56 +541,6 @@ Ready Components Stylesheet
 	-o-transition-delay: 1600ms;
 	transition-delay: 1600ms;
 }
-
-/* Style - 2 */
-.wptb-slider.style2 .wptb-slider--item {
-    padding: 200px 0px 140px 0px;
-}
-
-.wptb-slider.style2 .wptb-heading .wptb-item--title {
-	font-size: 48px;
-}
-
-
-/* Style - 3 */
-.wptb-slider.style3 {
-    background-color: var(--color-dark-two);
-}
-
-.wptb-slider.style3 .wptb-slider--item {
-    position: relative;
-    padding: 200px 80px 30px 80px;
-}
-
-.wptb-slider.style3 .wptb-heading .wptb-item--title {
-	font-size: 64px;
-    line-height: 1.1;
-    letter-spacing: -3.2px;
-    margin-bottom: 30px;
-}
-
-.wptb-slider.style3 .wptb-image-single {
-    position: relative;
-    margin-top: 100px;
-}
-
-.wptb-slider.style3 .wptb-image-single .wptb-item--inner {
-    position: relative;
-    z-index: 1;
-    border-radius: 16px;
-    overflow: hidden;
-}
-
-.wptb-slider.style3 .wptb-item-layer {
-    width: 100%;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(0deg, #090D13 10%, rgba(0, 0, 0, 0.00) 100%);
-    z-index: 2;
-}
-
 
 
 /* Layer Items */
@@ -1525,15 +1497,11 @@ Ready Components Stylesheet
 
 /* Image Box 1 */
 .wptb-image-box1 .wptb-item--inner {
-	background-color: var(--color-white);
 	position: relative;
-    border-radius: 45px;
-    padding: 26px;
 }
 
 .wptb-image-box1 .wptb-item--image {
     overflow: hidden;
-    border-radius: 26px;
 }
 
 .wptb-image-box1 .wptb-item--image img {

@@ -1,9 +1,9 @@
 /*
-Theme Name: BrightHub - HTML Template
+Theme Name: Mindverse - HTML Template
 Version: 1.0
 Author: WPThemeBooster
 Author URL: 
-Description: BrightHub - HTML Template
+Description: Mindverse - HTML Template
 */
 /*	IE 10 Fix*/
 

@@ -2,7 +2,7 @@
 
     /* Font Family */
     --font-family-base: "Inter", sans-serif;
-    --font-family-heading: "Inter", sans-serif;
+    --font-family-heading: "Space Grotesk", sans-serif;
     --font-family-three: "Abhaya Libre", serif;
 
     /* Font Weight */
@@ -156,32 +156,32 @@
     --fs-680:	    42.5rem;
 
     /* Theme Colors */
-    --color-one:                #7A5AF8;
-    --color-one-rgb:             122, 90, 248;
+    --color-one:                #1F4CFF;
+    --color-one-rgb:             31, 76, 255;
 
-    --color-two:                #181D27;
-    --color-two-rgb:            24, 29, 39;
+    --color-two:                #7932FF;
+    --color-two-rgb:            121, 50, 255;
 
-    --color-three:              #535862;
+    /* --color-three:              #535862;
     --color-three-rgb:          83, 88, 98;
     
-    --color-four:               #3E1C96;
-    --color-four-rgb:            62, 28, 150;
+    --color-four:               #7932FF;
+    --color-four-rgb:            121, 50, 255;
 
     --color-five:              #A4A7AE;
     --color-five-rgb:          164, 167, 174;
 
     --color-six:                #01E5E5;
-    --color-six-rgb:             122, 90, 248;
+    --color-six-rgb:             122, 90, 248; */
 
-    --color-dark:               #0B1030;
-    --color-dark-rgb:           11, 16, 48;
+    --color-dark:               #000212;
+    --color-dark-rgb:           0, 2, 18;
 
-    --color-dark-two:           #0A0D12;
+    /* --color-dark-two:           #0A0D12;
     --color-dark-two-rgb:       10, 13, 18;
 
     --color-light:              #D5D7DA;
-    --color-light-rgb:          213, 215, 218;
+    --color-light-rgb:          213, 215, 218; */
 
     --color-white:              #FFFFFF;
     --color-white-rgb:          255, 255, 255;
@@ -189,17 +189,17 @@
     --color-black:              #000000;
     --color-black-rgb:          0, 0, 0;
 
-    --color-muted:              #586563; 
+    /* --color-muted:              #586563;  */
 
-    --link-color:               #181D27;
+    --link-color:               #000212;
     --link-color-hover:         #7A5AF8;
     --link-color-active:        #7A5AF8;
 
-    --gradient-color-from:      #7A5AF8;
-    --gradient-color-to:        #181D27;
+    --gradient-color-from:      #272BEA;
+    --gradient-color-to:        #8B49D1;
 
     
-
+/* 
     --gradient-color-1: #EC8CF9;
     --gradient-color-2: #A789ED;
     --gradient-color-3: #66DDCB;
@@ -209,11 +209,10 @@
     --gradient-color-7: #A789ED;
     --gradient-color-8: #66DDCB;
     --gradient-color-9: #4FE3FC;
-    --gradient-color-10: #0478CE;
+    --gradient-color-10: #0478CE; */
 
-    --gradient-one: linear-gradient(0deg, rgba(var(--color-two-rgb), 1) 0%, rgba(var(--color-one-rgb), 1) 100%);
-    --gradient-one-alt: linear-gradient(rgba(var(--color-one-rgb), 1) 0%, rgba(var(--color-two-rgb), 1) 100%);
-    --gradient-two: linear-gradient(234deg, #01E5E5 0.28%, #008787 100.35%);
+    --gradient-one: linear-gradient(0deg, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
+    --gradient-radial: radial-gradient(circle, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
 
     /* Responsive Breakdown */
     --breakpoint-extralargedesktop: 1399.98px;
@@ -650,17 +649,17 @@ input[type="submit"],
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: var(--fs-16); 
+    font-family: var(--font-family-heading);
+    font-size: var(--fs-12); 
     font-weight: var(--fw-medium);
-    line-height: 1.35;
-    padding: 13px 17px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 17px 18px;
     border: 1px solid transparent;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border-radius: 8px;
-    letter-spacing: 0;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    letter-spacing: 1px;
     cursor: pointer;
     overflow: hidden;
     -webkit-transition: var(--transition-base);
@@ -668,10 +667,16 @@ input[type="submit"],
 }
 
 .btn.small {
-    padding: 8px 15px;
+    font-size: 10px;
+    padding: 15px 20px;
 }
 
 .btn.medium {
+    border-radius: 12px;
+    padding: 13px 20px;
+}
+
+.btn.large {
     border-radius: 12px;
     padding: 13px 20px;
 }
@@ -762,8 +767,9 @@ input[type="submit"]:hover{
 }
 
 .btn.gradient {
-    background: var(--Linear, linear-gradient(234deg, #01E5E5 0.28%, #008787 100.35%));
-    border: 1px solid rgba(var(--color-white-rgb), 0.4);
+    background: radial-gradient(circle,rgba(39, 43, 234, 1) 0%, rgba(139, 73, 209, 1) 100%);
+    border: 1px solid transparent;
+    box-shadow: inset 0px 4px 1px 0px rgba(var(--color-white-rgb), 0.14);
 }
 
 .btn.glossy {
