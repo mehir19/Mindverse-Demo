@@ -1,0 +1,110 @@
+@media screen and (min-width: 1500px) {
+    .wptb-counter1 .wptb-item--description {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1199px) {
+    .wptb-slider {
+        padding-top: 70px;
+    }
+    .wptb-page-heading .wptb-item--inner {
+        padding: 200px 0px 100px 0px;
+        flex-wrap: wrap;
+    }
+
+    .wptb-chatbox .wptb-item-layer-one {
+        left: 0px;
+        top: auto;
+        bottom: 90px;
+    }
+    
+    .wptb-chatbox .wptb-item-layer-two {
+        right: 0px;
+        bottom: 0vh;
+    }
+
+    .wptb-chatbox .wptb-item-layer-three {
+        top: 40px;
+        right: 120px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    br {
+        display: none;
+    }
+    
+    .h1, h1{
+        font-size: var(--fs-48);
+    }
+    .h2, h2{
+        font-size: var(--fs-36);
+    }
+    .h3, h3{
+        font-size: var(--fs-26);
+    }
+    .h4, h4{
+        font-size: var(--fs-24);
+    }
+    .h5, h5{
+        font-size: var(--fs-20);
+    }
+    .h6, h6{
+        font-size: var(--fs-18);
+    }
+
+    .wptb-banner-box__style-6 {
+        min-height: auto;
+    }
+
+    .wptb-line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .wptb-chatbox .wptb-item-layer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    
+}
+
+@media screen and (max-width: 575px) {
+    .wptb-icon-box--layout-3 .wptb-icon-box__feature-list {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 5px 0px;
+    }
+
+    .wptb-icon-box--layout-3 .wptb-icon-box__feature-item {
+        position: relative;
+        top: unset !important;
+        left: unset !important;
+        right: unset !important;
+        bottom: unset !important;
+        transform: unset !important;
+        width: 40px;
+        height: 40px;
+    }
+
+    .wptb-icon-box--layout-3>svg {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+}

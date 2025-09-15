@@ -1,0 +1,73 @@
+/* Theme Style Two */
+:root .theme-style--two {
+    --link-color:               #FFFFFF;
+    --link-color-hover:         #01E5E5;
+    --link-color-active:        #01E5E5;
+}
+
+body.theme-style--two {
+    color: var(--color-five);
+    background-color: var(--color-black);
+}
+
+.theme-style--two h1, .theme-style--two h2, .theme-style--two h3, .theme-style--two h4, .theme-style--two h5, .theme-style--two h6,
+.theme-style--two .h1, .theme-style--two .h2, .theme-style--two .h3, .theme-style--two .h4, .theme-style--two .h5, .theme-style--two .h6{
+    color: var(--color-white);
+}
+
+.theme-style--two .wptb-heading .wptb-item--title {
+    color: var(--color-white);
+}
+
+.theme-style--two .header .mainnav ul.main-menu li ul li a {
+    color: var(--color-black);
+}
+
+.theme-style--two .header .mainnav ul.main-menu li.current > a, .theme-style--two .header .mainnav ul.main-menu li.active > a, .theme-style--two .header .mainnav ul.main-menu li:hover > a {
+    color: var(--color-six);
+}
+
+.theme-style--two .wptb-country-marquee-wrapper::before {
+    width: 17%;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.theme-style--two .wptb-country-marquee-wrapper::after {
+    width: 17%;
+    background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.theme-style--two .wptb-text-marquee2 .wptb-item--text {
+    display: flex;
+    flex-shrink: 0;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px 8px 8px;
+    border-radius: 99px;
+    border: .6px solid rgba(255, 255, 255, 8%);
+    background: rgba(255, 255, 255, 4%);
+    box-shadow: 0 0 6px rgba(255, 255, 255, .16) inset;
+}
+
+
+/* Theme Style Three */
+.theme-style--three .for-dark-bg .wptb-heading .wptb-item--subtitle,
+.theme-style--three .for-dark-bg .wptb-heading .wptb-item--title {
+    color: var(--color-white);
+}
+
+.theme-style--three .for-dark-bg .wptb-heading .wptb-item--title {
+    background: linear-gradient(90deg, #fff 17.81%, #535353 131.33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.theme-style--three .wptb-heading .wptb-item--description {
+    color: var(--color-three);
+}
+
+.theme-style--three .for-dark-bg .wptb-heading .wptb-item--description {
+    color: var(--color-five);
+}
