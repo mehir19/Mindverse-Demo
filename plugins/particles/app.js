@@ -23,7 +23,7 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#1F4CFF"
       },
       "shape": {
         "type": "circle",
@@ -63,7 +63,7 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": false,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#1F4CFF",
         "opacity": 0.4,
         "width": 1
       },
@@ -144,7 +144,7 @@ particlesJS('particles-js-2',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#1F4CFF"
       },
       "shape": {
         "type": "circle",
@@ -184,7 +184,7 @@ particlesJS('particles-js-2',
       "line_linked": {
         "enable": false,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#1F4CFF",
         "opacity": 0.4,
         "width": 1
       },
@@ -265,7 +265,7 @@ particlesJS('particles-js-3',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#1F4CFF"
       },
       "shape": {
         "type": "circle",
@@ -305,7 +305,7 @@ particlesJS('particles-js-3',
       "line_linked": {
         "enable": false,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#1F4CFF",
         "opacity": 0.4,
         "width": 1
       },
@@ -386,7 +386,7 @@ particlesJS('particles-js-4',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#1F4CFF"
       },
       "shape": {
         "type": "circle",
@@ -426,7 +426,7 @@ particlesJS('particles-js-4',
       "line_linked": {
         "enable": false,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#1F4CFF",
         "opacity": 0.4,
         "width": 1
       },
@@ -507,7 +507,7 @@ particlesJS('particles-js-5',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#1F4CFF"
       },
       "shape": {
         "type": "circle",
@@ -547,7 +547,7 @@ particlesJS('particles-js-5',
       "line_linked": {
         "enable": false,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#1F4CFF",
         "opacity": 0.4,
         "width": 1
       },
@@ -628,7 +628,7 @@ particlesJS('particles-js-6',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#1F4CFF"
       },
       "shape": {
         "type": "circle",
@@ -668,7 +668,7 @@ particlesJS('particles-js-6',
       "line_linked": {
         "enable": false,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#1F4CFF",
         "opacity": 0.4,
         "width": 1
       },

@@ -12,16 +12,116 @@
 
 .wptb-imagebox--wrapper .wptb-item-layer {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(55, 145, 145, 0), #691AF2 50%, rgba(55, 145, 145, 0));
+    width: 80%;
+    height: 80%;
+    background: #691AF2;
     filter: blur(140px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all 3s ease 1.5s;
+    /* transition: all 3s ease 1.5s; */
     z-index: -1;
 }
+
+/* Circle Logo */
+.wptb-item--logo__style-circle {
+    position: relative;
+    max-width: 1140px;
+    height: 370px;
+    margin: 0px auto;
+    text-align: center;
+    background: -webkit-linear-gradient(180deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0) 100%);
+    background: -moz-linear-gradient(180deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0) 100%);
+    background: linear-gradient(180deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0) 100%);
+}
+.wptb-item--logo__style-circle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.wptb-item--logo__style-circle .wptb-item--logo__image {
+    position: relative;
+    text-align: center;
+    margin: -70px auto 0;
+    z-index: 1;
+    display: inline-block;
+}
+
+/* Blob */
+.wptb-blob {
+    position: relative;
+    z-index: 1;
+}
+
+.wptb-blob__wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1280px;
+    margin: 0 auto;
+    isolation: isolate;
+}
+
+.wptb-blob__wrap svg {
+    width: 100%;
+}
+
+.wptb-features {
+    padding-top: 0px;
+    margin-top: -130px;
+}
+
+.effective.alt {
+    transform: rotateX(180deg);
+}
+
+/* Testimonial */
+.wptb-testimonial .wptb-item-layer,
+.wptb-faq .wptb-item-layer {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.wptb-faq .wptb-item-layer-two {
+    left: 0;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.wptb-faq .wptb-item-layer-three {
+    left: 0;
+    top: 50%;
+    bottom: 0;
+    transform: none;
+}
+
+.wptb-faq .wptb-item-layer-three img {
+    animation: wptb_spin 60s linear infinite;
+}
+
+.wptb-testimonial-marquee-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .wptb-item--logo__style-circle {
+    height: auto;
+    background: transparent;
+}
+
+.footer .wptb-item--logo__style-circle::before {
+    display: none;
+}
+
+/* ========================================================== End Customization Here =================================================== */
 
 /* Features */
 .wptb-icon-box__layout-2 {
@@ -950,36 +1050,6 @@
     background: linear-gradient(270deg,#fdfdfd 0%,rgba(253,253,253,0) 100%);
 }
 
-/* For Testimonial Marquee */
-.wptb-testimonial-marquee-wrapper {
-    position: relative;
-    overflow: hidden;
-    max-height: 900px;
-}
-.wptb-testimonial-marquee-wrapper::before,
-.wptb-testimonial-marquee-wrapper::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-}
-
-.wptb-testimonial-marquee-wrapper::before {
-    height: 160px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.00) 100%);
-}
-
-.wptb-testimonial-marquee-wrapper::after {
-    height: 160px;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.00) 100%)
-}
 
 /* ----------------- */
 .wptb-icon-box--layout-3 {
@@ -1178,69 +1248,7 @@
     transition: opacity 1s ease;
 }
 
-.wptb-item--logo__style-circle {
-    position: relative;
-    width: 455px;
-    height: 339px;
-    margin: 0 auto;
-    text-align: center;
-}
-.wptb-item--logo__style-circle .circle-1 {
-    left: 49%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 2;
-}
 
-.wptb-item--logo__style-circle .circle-2 {
-    left: 50%;
-    top: 47%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 2;
-}
-
-.wptb-item--logo__style-circle .wptb-item--logo__image {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    width: 132px;
-    height: 132px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.wptb-item--logo__style-circle .wptb-item--logo__image::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 23px;
-    background: #5df7f7;
-    filter: blur(107.85px);
-}
-
-/* Blob */
-.wptb-blob {
-    position: relative;
-}
-
-.wptb-blob__wrap {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    max-width: 1280px;
-    margin: 0 auto;
-    isolation: isolate;
-}
-
-.wptb-blob__wrap svg {
-    width: 100%;
-}
 
 
 /* Coins */

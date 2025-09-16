@@ -1,9 +1,9 @@
 :root {
 
     /* Font Family */
-    --font-family-base: "Inter", sans-serif;
+    --font-family-base: "Golos Text", sans-serif;
     --font-family-heading: "Space Grotesk", sans-serif;
-    --font-family-three: "Abhaya Libre", serif;
+    --font-family-three: "Inter", sans-serif;
 
     /* Font Weight */
     --fw-lighter:         lighter;
@@ -564,7 +564,7 @@ textarea,
     font-size: var(--fs-15);
     font-weight: var(--fw-normal);
     background-clip: padding-box;
-    border: 1px solid var(--color-three);
+    border: 1px solid var(--color-two);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
@@ -672,12 +672,10 @@ input[type="submit"],
 }
 
 .btn.medium {
-    border-radius: 12px;
     padding: 13px 20px;
 }
 
 .btn.large {
-    border-radius: 12px;
     padding: 13px 20px;
 }
 
@@ -769,12 +767,11 @@ input[type="submit"]:hover{
 .btn.gradient {
     background: radial-gradient(circle,rgba(39, 43, 234, 1) 0%, rgba(139, 73, 209, 1) 100%);
     border: 1px solid transparent;
-    box-shadow: inset 0px 4px 1px 0px rgba(var(--color-white-rgb), 0.14);
+    box-shadow: inset 0px 1px 1px 0px rgba(var(--color-white-rgb), 0.18);
 }
 
 .btn.glossy {
-    background: rgba(var(--color-white-rgb), 0.08);
-    border: 1px solid rgba(var(--color-white-rgb), 0.08);
+    background: rgba(68, 73, 166, 0.46);
     backdrop-filter: blur(6px);
 }
 

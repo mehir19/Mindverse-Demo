@@ -766,7 +766,7 @@ body.left_menu .mr_menu {
 
 /* Sticky Nav */
 .header.sticky {
-  background-color: var(--color-dark-two);
+  background-color: var(--color-dark);
   transform: perspective(300px) rotateX(0deg);
   transform-origin: top;
   position: fixed !important;

@@ -8,19 +8,40 @@ Ready Components Stylesheet
     margin-bottom: 50px;
 }
 .wptb-heading .wptb-item--subtitle {
-    color: var(--color-four);
-    background: #1A1D44;
-    background: -webkit-linear-gradient(90deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0.01) 100%);
-    background: -moz-linear-gradient(90deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0.01) 100%);
-    background: linear-gradient(90deg,rgba(26, 29, 68, 1) 0%, rgba(26, 29, 68, 0.01) 100%);
+    position: relative;
+    color: var(--color-white);
     display: inline-block;
-    font-size: var(--fs-14);
+    font-size: var(--fs-12);
     font-weight: var(--fw-medium);
-    line-height: 1.3;
-    letter-spacing: -.28px;
-    padding: 7px 16px;
-    border-radius: 8px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1px;
     margin-bottom: 20px;
+}
+
+.wptb-heading .wptb-item--subtitle span {
+    background: #2A2C3C;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 11px 16px;
+    border-radius: 30px;
+}
+
+.wptb-heading .wptb-item--subtitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 36px;
+    border-radius: 30px;
+    background: -webkit-linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 2, 18, 0) 100%);
+    background: -moz-linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 2, 18, 0) 100%);
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 2, 18, 0) 100%);
+    z-index: -1;
+    animation: wptb_opacity 3s ease-in-out 0.5s infinite;
 }
 
 .wptb-heading .wptb-item--title {
@@ -48,8 +69,9 @@ Ready Components Stylesheet
 }
 
 .wptb-heading .wptb-item--description {
+    color: rgba(var(--color-white-rgb), 0.5);
     position: relative;
-    font-family: var(--font-family-heading);
+    
     font-size: 15px;
     font-weight: var(--fw-medium);
     margin-top: 0px;
@@ -100,9 +122,9 @@ Ready Components Stylesheet
 }
 
 .wptb-heading.lg .wptb-item--title {
-    font-size: 64px;
-    line-height: 1.1;
-    letter-spacing: -2px;
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: -1.6px;
 }
 
 
@@ -366,6 +388,7 @@ Ready Components Stylesheet
 /* Main Slider */
 .wptb-slider {
     position:relative;
+    overflow: hidden;
 }
 .wptb-slider .wptb-slider--item {
 	position:relative;
@@ -2563,46 +2586,45 @@ Ready Components Stylesheet
 }
 .wptb-accordion1 .wptb--item {
     position: relative;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-light);
+    background:radial-gradient(circle,rgba(33, 10, 87, 0.84) 0%, rgba(35, 35, 63, 0.66) 100%);
     border-radius: 16px;
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.11) inset;
+    overflow: hidden;
 }
 
-.wptb-accordion1 .wptb--item.active {
-    border-color: var(--color-white);
+.wptb-accordion1 .wptb--item::before {
+    content: url('../img/misc/flare-2.svg');
+    position: absolute;
+    right: -80px;
+    top: -110px;
+    width: 380px;
+    height: 310px;
+    opacity: 0;
+    transition: var(--transition-base);
+}
+
+.wptb-accordion1 .wptb--item.active::before {
+    opacity: 1;
 }
 
 .wptb-accordion1 .wptb--item + .wptb--item {
     margin-top: 15px;
 }
 
-.wptb-accordion1 .wptb--item.active::before {
-    content: "";
-    background: linear-gradient(299deg, rgba(173, 157, 255, .88) 0%, rgba(158, 229, 255, .88) 49.19%, rgba(220, 160, 255, .88) 98.39%);
-    border-radius: 16px;
-    filter: blur(28px);
-    z-index: -1;
-    position: absolute;
-    width: calc(100% - 28px);
-    height: calc(100% - 28px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .wptb-accordion1 .wptb-item-title {
     position: relative;
-    min-height: 66px;
+    min-height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     transition: var(--transition-base);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -.36px;
     padding: 24px 48px 24px 24px;
     margin-bottom: 0px;
+    z-index: 1;
 }
 
 .wptb-accordion1 .wptb--item.active .wptb-item-title {
@@ -2645,28 +2667,19 @@ Ready Components Stylesheet
 }
 
 .wptb-accordion1 .wptb--item .wptb-item--content {
-    background-color: var(--color-white);
+    color: rgba(var(--color-white-rgb), 0.6);
+    background-color: transparent;
+    position: relative;
+    
     padding: 0px 48px 24px 24px;
     display: none;
+    z-index: 1;
 }
 
 .wptb-accordion1 .wptb--item.active .wptb-item--content {
     display: block;
 }
 
-.wptb-accordion1.style2 .wptb--item {
-    background-color: rgba(var(--color-white-rgb), 0.02);
-    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.16) inset;
-    border: 1px solid rgba(var(--color-white-rgb), 0.1);
-}
-
-.wptb-accordion1.style2 .wptb--item::before {
-    display: none;
-}
-
-.wptb-accordion1.style2 .wptb--item .wptb-item--content {
-    background-color: transparent;
-}
 
 @media screen and (max-width: 991px) {
     .wptb-accordion1 .wptb-item-title {
@@ -3665,17 +3678,31 @@ Ready Components Stylesheet
     position: relative;
     margin: 8px 0px;
     display: inline-block;
+    width: 492px;
 }
 
 .wptb-testimonial2 .wptb-item--inner {
 	position: relative;
-    padding: 24px;
+    padding: 50px 50px 45px 65px;
     border-radius: 16px;
-    border: .6px solid rgba(var(--color-white-rgb), 0.08);
-    background: rgba(var(--color-white-rgb), 0.04);
-    box-shadow: 0 0 6px rgba(var(--color-white-rgb), 0.16) inset;
+    border: 2px solid rgba(var(--color-white-rgb), 0.05);
+    box-shadow: 0 1px 0px 0px rgba(var(--color-white-rgb), 0.11) inset;
     backdrop-filter: blur(6px);
     width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.wptb-testimonial2 .wptb-item--inner::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid rgba(var(--color-white-rgb), 0.05);
+    background: radial-gradient(circle,rgba(33, 10, 87, 0.84) 0%, rgba(35, 35, 63, 1) 100%);
+    opacity: 0.6;
 }
 
 .wptb-testimonial2 .wptb-item--inner .wptb-item--image {
@@ -3693,6 +3720,10 @@ Ready Components Stylesheet
     object-fit: cover;
 }
 
+.wptb-testimonial2 .wptb-item--top {
+    position: relative;
+}
+
 .wptb-testimonial2 .wptb-item--inner .wptb-item--holder {
     position: relative;
 	transition: var(--transition-base);
@@ -3708,26 +3739,30 @@ Ready Components Stylesheet
 .wptb-testimonial2 .wptb-item--inner .wptb-item--title {
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: -.28px;
+    line-height: 1;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
     margin-top: 0px;
 	margin-bottom: 5px;
 }
 
 .wptb-testimonial2 .wptb-item--inner .wptb-item--designation {
-    color: var(--color-five);
+    color: rgba(var(--color-white-rgb), 0.7);
+    
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -.24px;
+    line-height: 23px;
+    letter-spacing: 0px;
     margin-bottom: 0px;
 }
 
 .wptb-testimonial2 .wptb-item--inner .wptb-item--description {
-    color: var(--color-five);
-    font-size: 15px;
-    line-height: 1.6;
+    color: rgba(var(--color-white-rgb), 0.7);
+    
+    font-size: 16px;
+    line-height: 24px;
     margin-top: 15px;
+    white-space: normal;
 }
 
 .wptb-testimonial2 .wptb-item--inner .wptb-item--meta-rating {
@@ -5806,82 +5841,72 @@ svg.radial-progress {
 
 /* Newsletter */
 .wptb-newsletter {
+    color: rgba(var(--color-white-rgb), 0.5);
+    background-color: rgba(var(--color-white-rgb), 0.04);
     position: relative;
     z-index: 1;
-}
-.wptb-newsletter .wptb-item--inner {
-    position: relative;
-    padding: 100px 0px;
+    border-radius: 10px;
     overflow: hidden;
 }
-.wptb-newsletter .wptb-item--inner .wptb-item--title {
-    color: var(--color-white);
-}
-.wptb-newsletter .wptb-item--inner .wptb-item--description {
-    color: var(--color-light);
+
+.wptb-newsletter::before,
+.wptb-newsletter::after {
+    content: url('../img/misc/flare-3.svg');
+    position: absolute;
+    width: 440px;
+    height: 360px;
 }
 
-.newsletter-form {
+.wptb-newsletter::before {
+    left: -180px;
+    bottom: -240px;
+}
+
+.wptb-newsletter::after {
+    right: -120px;
+    top: -180px;
+}
+
+.wptb-newsletter .wptb-newsletter--inner {
+    position: relative;
+    z-index: 1;
+    padding: 40px 40px;
+    overflow: hidden;
+}
+
+.wptb-newsletter .wptb-heading {
+    margin-bottom: 30px;
+}
+
+.wptb-newsletter .wptb-heading .wptb-item--title {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.wptb-newsletter-form {
     position: relative;
 }
-.newsletter-form .form-control {
-    font-family: var(--font-family-base);
-    color: var(--color-three);
-    border-radius: 100px;
-    height: 72px;
-    padding: 15px 30px;
-}
-.newsletter-form .form-control:focus {
-    color: var(--color-three);
-    border-color: var(--color-white);
+
+.wptb-newsletter-form .form-control {
+    background-color: rgba(var(--color-white-rgb), 0.06);
+    border-color: transparent;
+    height: 60px;
 }
 
-.newsletter-form .btn-three {
-    padding: 0;
-    justify-content: space-between;
-    border: 0;
-    width: auto;
-    min-width: auto;
-    height: auto;
+.wptb-newsletter-form .form-control:focus {
+    border-color: rgba(var(--color-white-rgb), 0.1);
+}
+
+.wptb-newsletter-form button.btn {
     position: absolute;
-    top: 4px;
-    right: 4px;
-    transition: var(--transition-base);
-}
-
-.newsletter-form .btn-three .btn-three--icon {
-    width: 64px;
-    height: 64px;
-    line-height: 64px;
-    background-color: transparent;
-    color: var(--color-white);
-    transform: rotate(43deg);
-    transition: var(--transition-base);
-}
-
-.newsletter-form .btn-three:hover .btn-three--icon {
-    transform: rotate(10deg);
-}
-
-.newsletter-form ::-webkit-input-placeholder {
-    color: var(--color-three);
-    font-size: 16px;
-}
-.newsletter-form ::-moz-placeholder {
-    color: var(--color-three);
-    font-size: 16px;
-}
-.newsletter-form :-ms-input-placeholder {
-    color: var(--color-three);
-    font-size: 16px;
-}
-.newsletter-form :-moz-placeholder {
-    color: var(--color-three);
-    font-size: 16px;
-}
-.newsletter-form ::placeholder {
-    color: var(--color-three);
-    font-size: 16px;
+    top: 5px;
+    right: 5px;
+    min-width: auto;
+    height: 50px;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 0px 18px;
 }
 
 

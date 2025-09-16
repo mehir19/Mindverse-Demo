@@ -43,10 +43,11 @@
 .footer .widget-title {
     position: relative;
     display: inline-block;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 1.35;
-    letter-spacing: -.36px;
+    line-height: 1;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
     padding-bottom: 10px;
     margin-top: 0px;
     margin-bottom: 15px;
@@ -186,43 +187,17 @@
     line-height: 24px;
 }
 
-.footer .social-box {
-    margin-top: 50px;
-}
-
-.footer .social-box ul{
-	position:relative;
-	margin-bottom: 0px;
-	padding: 0px;
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    flex-wrap: wrap;
+.footer .wptb-social-box ul {
+    gap: 35px;
 }
 
 .footer .social-box ul li{
 	position:relative;
 }
 
-.footer .social-box ul li a {
-    color: var(--link-color);
-    background-color: transparent;
-    border: 1px solid rgba(var(--color-two-rgb), 0.1);
-    border-radius: 100%;
-	position:relative;
-	font-size:var(--fs-18);
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer .social-box ul li a:hover{
-    color: var(--color-white);
-    background-color: var(--coor-white);
-    transform: translateY(-3px);
+.footer .wptb-social-box ul li a {
+	font-size:var(--fs-14);
+    font-weight: var(--fw-medium);
 }
 
 
@@ -275,16 +250,27 @@
 
 
 /* Footer style 2 */
+.footer.style2 {
+    background-color: var(--color-dark);
+}
 .footer.style2 .footer-inner {
-    background: linear-gradient(180deg, #000 0%, #001010 60%, #022 100%);
     position: relative;
     border-radius: 16px 16px 16px 16px;
-    padding: 0px 65px 65px;
+    padding-top: 50px;
 }
 
 .footer.style2 .footer-bottom {
-    border-top: 1px solid rgba(var(--color-white-rgb), 0.16);
-    padding-top: 65px;
+    border-top: 1px solid rgba(var(--color-white-rgb), 0.1);
+    padding: 70px 0px;
+    margin-top: 110px;
+}
+
+.footer.style2 .copyright {
+    color: rgba(var(--color-white-rgb), 0.5);
+}
+
+.footer.style2 ul li a:not(:hover) {
+    color: rgba(var(--color-white-rgb), 0.5);
 }
 
 /* Footer style 3 */
