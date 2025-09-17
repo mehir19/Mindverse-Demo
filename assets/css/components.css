@@ -569,6 +569,11 @@ Ready Components Stylesheet
 /* Layer Items */
 .wptb-item-layer {
     position: absolute;
+    text-align: center;
+}
+
+.wptb-item-layer img {
+    width: 100%;
 }
 
 .wptb-item-layer-one {
@@ -1171,9 +1176,13 @@ Ready Components Stylesheet
 /* Iconbox 3 */
 .wptb-icon-box3 {
     position: relative;
+    transition: var(--transition-base);
 }
 .wptb-icon-box3 .wptb-item--inner {
     position: relative;
+    transition: var(--transition-base);
+    overflow: hidden;
+    z-index: 1;
 }
 
 .wptb-icon-box3 .wptb-item--icon {
@@ -1217,19 +1226,91 @@ Ready Components Stylesheet
 }
 
 /* Style 2 */
-.wptb-icon-box3.style2 .wptb-item--icon {
-    background-color: transparent;
-    width: 24px;
-    height: 24px;
-    border-radius: 0px;
+.wptb-icon-box3.style2 .wptb-item--inner {
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 16px;
+    box-shadow: 0px -1px 0px 0px rgba(var(--color-white-rgb), 0.22);
+}
+
+.wptb-icon-box3.style2 .wptb-item--inner::before,
+.wptb-icon-box3.style2 .wptb-item--inner::after {
+    content: '';
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.8;
+    transition: var(--transition-base);
+}
+
+.wptb-icon-box3.style2 .wptb-item--inner::before {
+    background: #210A57;;
+    background: radial-gradient(circle,rgba(72, 72, 123, 0.34) 0%, rgba(54, 33, 104, 0.84) 100%);
+}
+
+.wptb-icon-box3.style2 .wptb-item--inner::after {
+    background: #210A57;
+    background: radial-gradient(circle, rgba(33, 10, 87, 0.84) 0%, rgba(35, 35, 63, 0.66) 100%);
+    opacity: 0;
+}
+
+.wptb-icon-box3.style2:hover .wptb-item--inner::before {
+    opacity: 0;
+}
+.wptb-icon-box3.style2:hover .wptb-item--inner::after {
+    opacity: 1;
+}
+
+.wptb-icon-box3.style2 .wptb-item--inner .wptb-item--flare {
+    position: absolute;
+    width: 100%;
+    top: -25px;
+    right: 0px;
+    opacity: 0;
+    transition: var(--transition-base);
+}
+
+.wptb-icon-box3.style2:hover .wptb-item--inner .wptb-item--flare {
+    opacity: 1;
+}
+
+.wptb-icon-box3.style2 .wptb-item--inner .wptb-item--flare img {
+    width: 100%;
+}
+
+.wptb-icon-box3.style2 .wptb-item--icon {
+    background-color: rgba(var(--color-white-rgb), 0.05);
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    margin: 0 auto 20px;
+    font-family: var(--font-family-heading);
+    font-size: 48px;
+    font-weight: var(--fw-bold);
+    letter-spacing: 2px;
+}
+
+.wptb-icon-box3.style2 .wptb-item--icon .step-number{
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-white);
+    -webkit-text-fill-color: transparent;
 }
 
 .wptb-icon-box3.style2 .wptb-item--title {
     font-size: 18px;
-    margin-left: 32px;
+    letter-spacing: -0.36px;
+    margin-bottom: 10px;
+}
+
+.wptb-icon-box3.style2 .wptb-item--description {
+    color: rgba(var(--color-white-rgb), 0.7);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: var(--fw-medium);
 }
 
 /* Style 3 */
@@ -2011,34 +2092,35 @@ Ready Components Stylesheet
 /* Funfacts Two */
 .wptb-counter2 .wptb-item--inner {
     position: relative;
-    border-left: 2px solid var(--color-white);
-    padding-left: 35px;
-}
-
-.wptb-counter2 .wptb-item--inner::before {
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 500%;
-    background-color: rgba(var(--color-white-rgb), 0.20);
+    display: flex;
+    align-items: center;
+    gap: 15px 25px;
 }
 
 .wptb-counter2 .wptb-item--icon {
-    margin-bottom: 35px;
+    background-color: rgba(var(--color-white-rgb), 0.15);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    flex-shrink: 0;
 }
 
 .wptb-counter2 .wptb-item--value {
-    font-size: 80px;
-    line-height: 60px;
-    font-weight: var(--fw-normal);
+    font-family: var(--font-family-heading);
+    font-size: 70px;
+    line-height: 1;
+    font-weight: var(--fw-medium);
+    letter-spacing: -1.6px;
+    margin-bottom: 10px;
 }
 .wptb-counter2 .wptb-item--text {
-    font-size: 22px;
-    font-weight: var(--fw-semibold);
-    line-height: 32px;
+    color: rgba(var(--color-white-rgb), 0.7);
+    font-size: 20px;
+    font-weight: var(--fw-medium);
+    line-height: 23px;
 }
 
 /* Funfacts Three */
@@ -5881,6 +5963,9 @@ svg.radial-progress {
 .wptb-newsletter .wptb-heading .wptb-item--title {
     font-size: 24px;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .wptb-newsletter-form {

@@ -259,6 +259,10 @@
     padding-top: 50px;
 }
 
+.footer.style2 .footer-top {
+    position: relative;
+}
+
 .footer.style2 .footer-bottom {
     border-top: 1px solid rgba(var(--color-white-rgb), 0.1);
     padding: 70px 0px;
@@ -271,6 +275,24 @@
 
 .footer.style2 ul li a:not(:hover) {
     color: rgba(var(--color-white-rgb), 0.5);
+}
+
+.footer.style2 .wptb-item-layer-one {
+    left: -100px;
+    top: auto;
+    bottom: -160px;
+}
+
+.footer.style2 .wptb-item-layer-two {
+    left: -200px;
+    bottom: 190px;
+}
+
+.footer.style2 .wptb-heading .wptb-item--description {
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: var(--fw-medium);
+    margin-top: 20px;
 }
 
 /* Footer style 3 */
