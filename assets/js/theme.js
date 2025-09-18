@@ -235,6 +235,53 @@ Description: Mindverse - HTML Template
             $(this).addClass("active").siblings().removeClass("active");
         });
 
+        // Odometer
+        $('.odometer').appear();
+        $('.odometer').appear(function(){
+            var odo = $(".odometer");
+            odo.each(function() {
+                var countNumber = $(this).attr("data-count");
+                $(this).html(countNumber);
+            });
+            window.odometerOptions = {
+                format: 'd',
+            };
+        });
+        
+
+       // Fancybox
+        $('[data-fancybox]').fancybox({
+			arrows: true,
+			animationEffect: [
+			//"false",            - disable
+			//"fade",
+			//"slide",
+			//"circular",
+			// "tube",
+			"zoom-in-out",
+			// "rotate"
+			],
+			transitionEffect: [
+			//"false",            - disable
+			"fade",
+			//"slide",
+			// "circular",
+			//"tube",
+			//"zoom-in-out",
+			//"rotate"
+			],
+			buttons: [
+			"zoom",
+			//"share",
+			//"slideShow",
+			"fullScreen",
+			//"download",
+			//"thumbs",
+			"close"
+			],
+			infobar: false,
+		});
+
         // Rotate dot around circles Start
         function animateOrbit(dotId, radius, speed, offset=0) {
             const dot = document.getElementById(dotId);
@@ -259,37 +306,37 @@ Description: Mindverse - HTML Template
         // Rotate dot around circles End
 
         // Add auto active class 
-        const bannerBoxes = document.querySelectorAll(".wptb-banner-box__top");
-        let bannerIndex = 0;
-        const bannerDelay = 1500; // 1 second
+        // const bannerBoxes = document.querySelectorAll(".wptb-banner-box__top");
+        // let bannerIndex = 0;
+        // const bannerDelay = 1500; // 1 second
 
-        function activateBannerNext() {
-            bannerBoxes.forEach(box => {
-                const items = box.querySelectorAll("li");
-                if (items.length === 0) return;
+        // function activateBannerNext() {
+        //     bannerBoxes.forEach(box => {
+        //         const items = box.querySelectorAll("li");
+        //         if (items.length === 0) return;
 
-                // Remove active
-                items.forEach(item => item.classList.remove("active"));
+        //         // Remove active
+        //         items.forEach(item => item.classList.remove("active"));
 
-                // Add active
-                items[bannerIndex % items.length].classList.add("active");
-            });
+        //         // Add active
+        //         items[bannerIndex % items.length].classList.add("active");
+        //     });
 
-            bannerIndex++;
-        }
+        //     bannerIndex++;
+        // }
 
-        activateBannerNext();
-        setInterval(activateBannerNext, bannerDelay);
+        // activateBannerNext();
+        // setInterval(activateBannerNext, bannerDelay);
 
 
         // Add auto active class 
-        const stepFeatures = document.querySelectorAll(".pxl-step__feature li");
-        const relatedBoxes = document.querySelectorAll(".pxl-step__content li"); // replace with actual
-        const stepLine = document.querySelector(".pxl-step__feature-line");
+        // const stepFeatures = document.querySelectorAll(".pxl-step__feature li");
+        // const relatedBoxes = document.querySelectorAll(".pxl-step__content li"); // replace with actual
+        // const stepLine = document.querySelector(".pxl-step__feature-line");
 
-        let stepIndex = 0;
-        const stepDelay = 2000; // 2 seconds
-        let stepInterval;
+        // let stepIndex = 0;
+        // const stepDelay = 2000; // 2 seconds
+        // let stepInterval;
 
         // Function to activate item by index
         // function activateStep(index) {
