@@ -312,6 +312,24 @@
     z-index: -1;
 }
 
+.wptb-funfacts--wrapper {
+    position: relative;
+}
+
+.wptb-funfacts--wrapper svg.left-set-objects {
+    position: absolute;
+    right: calc(100% - 15px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wptb-funfacts--wrapper svg.right-set-objects {
+    position: absolute;
+    left: calc(100% - 15px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* ========================================================== End Customization Here =================================================== */
 
 /* Features */

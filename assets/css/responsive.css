@@ -68,6 +68,11 @@
     .wptb-funfacts--inner {
         padding: 50px 50px;
     }
+
+    .wptb-funfacts--wrapper svg.left-set-objects,
+    .wptb-funfacts--wrapper svg.right-set-objects {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
