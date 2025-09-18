@@ -97,5 +97,8 @@
 }
 
 @media screen and (max-width: 450px) {
-
+    .wptb-counter2 .wptb-item--inner {
+        flex-direction: column;
+        text-align: center;
+    }
 }
