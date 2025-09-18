@@ -133,6 +133,7 @@
     left: 0;
     top: 0;
     right: 0;
+    text-align: center;
 }
 
 .wptb-feature-box .wptb-feature-box--inner {
@@ -196,7 +197,7 @@
 }
 
 .wptb-feature-box--style-2 .wptb-feature-box--overlay {
-    top: -80px;
+    top: -25px;
 }
 
 .wptb-feature-box--style-2 .wptb-feature-box--inner {
@@ -206,7 +207,6 @@
 .wptb-feature-box--style-2 .wptb-feature-box--feature-type--style-1 {
     text-align: center;
     margin-top: 0px;
-    margin-left: -8px;
 }
 
 .wptb-feature-box--style-2 .wptb-feature-box--feature-type--style-1 img {
@@ -256,10 +256,17 @@
     padding: 0px 30px;
 }
 
+.wptb-features .wptb-item-layer,
+.wptb-working-process .wptb-item-layer {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .wptb-working-process .wptb-working-process--inner {
     position: relative;
     padding: 160px 30px 360px;
     border-radius: 40px;
+    background-repeat: no-repeat
 }
 
 .wptb-working-process .icon-box-wrapper {

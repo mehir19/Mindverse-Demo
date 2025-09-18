@@ -285,7 +285,7 @@ Description: Mindverse - HTML Template
         // Rotate dot around circles Start
         function animateOrbit(dotId, radius, speed, offset=0) {
             const dot = document.getElementById(dotId);
-            const centerX = 200, centerY = 200;
+            const centerX = 140, centerY = 140;
             let angle = offset;
 
             function frame() {

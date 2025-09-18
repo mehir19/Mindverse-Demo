@@ -295,6 +295,10 @@
     margin-top: 20px;
 }
 
+.footer-divider {
+    max-width: 100%;
+}
+
 /* Footer style 3 */
 .footer.style3 {
     padding: 45px 0px 120px;
