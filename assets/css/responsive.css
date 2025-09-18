@@ -86,6 +86,11 @@
         margin-bottom: 5px;
     }
 
+    .wptb-feature-box.wptb-feature-box--style-1 .wptb-feature-box--top,
+    .wptb-feature-box.wptb-feature-box--style-3 .wptb-feature-box--top {
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
