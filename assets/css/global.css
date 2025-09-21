@@ -163,10 +163,10 @@
     --color-two:                #7932FF;
     --color-two-rgb:            121, 50, 255;
 
-    /* --color-three:              #535862;
-    --color-three-rgb:          83, 88, 98;
+    /* --color-three:              #CDF683;
+    --color-three-rgb:          205, 246, 131; */
     
-    --color-four:               #7932FF;
+    /* --color-four:               #7932FF;
     --color-four-rgb:            121, 50, 255;
 
     --color-five:              #A4A7AE;
@@ -178,23 +178,30 @@
     --color-dark:               #000212;
     --color-dark-rgb:           0, 2, 18;
 
-    /* --color-dark-two:           #0A0D12;
-    --color-dark-two-rgb:       10, 13, 18;
+    --color-dark-two:           #181A0F;
+    --color-dark-two-rgb:       24, 26, 15;
 
-    --color-light:              #D5D7DA;
+    /* --color-light:              #D5D7DA;
     --color-light-rgb:          213, 215, 218; */
-
+    
+    
     --color-white:              #FFFFFF;
     --color-white-rgb:          255, 255, 255;
-
+    
     --color-black:              #000000;
     --color-black-rgb:          0, 0, 0;
-
+    
     /* --color-muted:              #586563;  */
+    
+    --color-green:              #CDF683;
+    --color-green-rgb:          205, 246, 131;
+
+    --color-light-green:        #F7F7F0;
+    --color-light-green-rgb:    247, 247, 240;
 
     --link-color:               #000212;
-    --link-color-hover:         #7A5AF8;
-    --link-color-active:        #7A5AF8;
+    --link-color-hover:         #1F4CFF;
+    --link-color-active:        #1F4CFF;
 
     --gradient-color-from:      #272BEA;
     --gradient-color-to:        #8B49D1;

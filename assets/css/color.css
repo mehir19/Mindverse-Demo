@@ -1,4 +1,51 @@
 /* Theme Style Two */
+:root .theme-style--one {
+    --link-color:               #181A0F;
+    --link-color-hover:         #CDF683;
+    --link-color-active:        #CDF683;
+}
+
+body.theme-style--one {
+    color: var(--color-white);
+    background-color: var(--color-light-green);
+}
+
+.theme-style--one .wptb-heading .wptb-item--title .highlight {
+    color: #7A5AF8;
+}
+
+.theme-style--one .wptb-heading .wptb-item--subtitle span {
+    color: var(--color-black);
+    background-color: var(--color-green);
+    position: relative;
+}
+
+.theme-style--one .wptb-heading .wptb-item--subtitle::before {
+    display: none;
+}
+
+.theme-style--one .wptb-item--logo__style-circle,
+.theme-style--one .wptb-item--logo__style-circle::before {
+    background: none;
+}
+
+.theme-style--one .wptb-item--logo__style-circle .wptb-blob__wrap-focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.theme-style--one .wptb-imagebox--wrapper .wptb-imagebox--content {
+    background-color: rgba(var(--color-white-rgb), 0.38);
+    backdrop-filter: blur(20px);
+}
+
+.theme-style--one .wptb-image-box2 .wptb-item--inner {
+    background: rgba(var(--color-white-rgb), 0.5);
+}
+
+/* Theme Style Two */
 :root .theme-style--two {
     --link-color:               #FFFFFF;
     --link-color-hover:         #1F4CFF;
