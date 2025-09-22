@@ -191,7 +191,7 @@
     --color-black:              #000000;
     --color-black-rgb:          0, 0, 0;
     
-    /* --color-muted:              #586563;  */
+    --color-muted:              #5F6A77;
     
     --color-green:              #CDF683;
     --color-green-rgb:          205, 246, 131;
@@ -703,6 +703,24 @@ input[type="submit"]:hover{
     color: var(--color-white);
     background-color: var(--color-two);
     border-color: var(--color-two);
+}
+
+.btn.black {
+    color: var(--color-white);
+    background: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.btn.white {
+    color: var(--color-black);
+    background: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn.green {
+    color: var(--color-black);
+    background: var(--color-green);
+    border-color: var(--color-green);
 }
 
 .btn .btn-wrap{

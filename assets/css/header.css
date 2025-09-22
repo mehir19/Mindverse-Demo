@@ -772,6 +772,10 @@ body.left_menu .mr_menu {
   position: fixed !important;
 }
 
+.theme-style--one .header.sticky {
+  background-color: var(--color-white);
+}
+
 .header.sticky .header-top,
 .header.style2.sticky .header-top {
 	max-height: 0px;

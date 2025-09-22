@@ -47,10 +47,6 @@
     br {
         display: none;
     }
-    
-    .wptb-item--logo__style-circle .wptb-item--logo__image {
-        margin-top: 70px;
-    }
 
     .wptb-image-box2 .wptb-item--image {
         width: 100%;
@@ -63,6 +59,10 @@
 
     .wptb-working-process .wptb-working-process--inner {
         padding: 115px 15px 300px;
+    }
+
+    .wptb-working-process + .effective {
+        margin-top: -150px;
     }
 
     .wptb-funfacts--inner {
@@ -91,8 +91,8 @@
         margin-bottom: 5px;
     }
 
-    .wptb-feature-box.wptb-feature-box--style-1 .wptb-feature-box--top,
-    .wptb-feature-box.wptb-feature-box--style-3 .wptb-feature-box--top {
+    .wptb-feature-box.wptb-feature-box--1 .wptb-feature-box--top,
+    .wptb-feature-box.wptb-feature-box--3 .wptb-feature-box--top {
         text-align: center;
     }
 
