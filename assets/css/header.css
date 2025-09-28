@@ -835,8 +835,20 @@ body.left_menu .mr_menu {
 }
 
 /* Header Style 3 */
-.header.style3 .header-top {
-  background-color: var(--color-dark-two);
+.header.style3 {
+  top: 30px;
+  border-bottom: 0px;
+}
+.header.style3 .header-inner {
+  background: #08218F;
+  background: radial-gradient(circle, rgba(8, 33, 143, 1) 40%, rgba(41, 138, 203, 1) 100%);
+  border-radius: 200px;
+  padding: 5px 25px;
+}
+
+.header.style3.sticky {
+  top: 10px;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1366px) {

@@ -69,7 +69,7 @@ Ready Components Stylesheet
 }
 
 .wptb-heading .wptb-item--description {
-    color: var(--color-black);
+    color: var(--color-muted);
     position: relative;    
     font-size: 15px;
     font-weight: var(--fw-medium);
@@ -425,13 +425,35 @@ Ready Components Stylesheet
 	transition: all 1000ms ease;
 }
 
+.wptb-slider .wptb-heading .typed-wrapper {
+    background: -webkit-linear-gradient(90deg,rgba(105, 56, 239, 0.2) 0%, rgba(105, 56, 239, 0.06) 100%);
+    background: -moz-linear-gradient(90deg,rgba(105, 56, 239, 0.2) 0%, rgba(105, 56, 239, 0.06) 100%);
+    background: linear-gradient(90deg,rgba(105, 56, 239, 0.2) 0%, rgba(105, 56, 239, 0.06) 100%);
+    /* border-left: 4px solid var(--color-one); */
+    padding-left: 8px;
+    padding-right: 10px;
+}
 .wptb-slider .wptb-heading .typed {
-    background: linear-gradient(90deg, rgba(105, 56, 239, .2) -28.95%, rgba(105, 56, 239, 6%) 100%);
-    border-left: 4px solid var(--color-one);
+    background: -webkit-linear-gradient(90deg,rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
+    background: -moz-linear-gradient(90deg,rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
+    background: linear-gradient(90deg,rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wptb-slider .wptb-heading .typed-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: -webkit-linear-gradient(90deg,rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
+    background: -moz-linear-gradient(90deg,rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
+    background: linear-gradient(90deg,rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
 }
 
 .wptb-slider .wptb-heading .wptb-item--description {
-    color: var(--color-white);
     font-size: 18px;
     line-height: 1.35em;
     letter-spacing: -0.36px;
@@ -555,6 +577,47 @@ Ready Components Stylesheet
 	transition-delay: 1600ms;
 }
 
+/* Style - 3 */
+.wptb-slider.style3 .wptb-slider--item {
+    position: relative;
+    padding: 200px 80px 30px 80px;
+}
+
+.wptb-slider.style3 .wptb-heading .wptb-item--description {
+    font-size: 20px;
+    line-height: 33px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.wptb-slider.style3 .wptb-image-single {
+    position: relative;
+    margin-top: 100px;
+}
+
+.wptb-slider.style3 .wptb-image-single .wptb-item--inner {
+    position: relative;
+    z-index: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 12px 12px 0px;
+}
+
+.wptb-slider.style3 .wptb-image-single .wptb-item--inner img {
+    width: 100%;
+}
+
+.wptb-slider.style3 .wptb-item-layer {
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: -webkit-linear-gradient(177deg,rgba(8, 19, 54, 0) 0%, rgba(8, 19, 54, 1) 100%);
+    background: -moz-linear-gradient(177deg,rgba(8, 19, 54, 0) 0%, rgba(8, 19, 54, 1) 100%);
+    background: linear-gradient(177deg,rgba(8, 19, 54, 0) 0%, rgba(8, 19, 54, 1) 100%);
+    z-index: 2;
+}
 
 /* Layer Items */
 .wptb-item-layer {

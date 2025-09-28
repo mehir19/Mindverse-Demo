@@ -1,4 +1,33 @@
-/* Theme Style Two */
+/* Theme Style Dark */
+body.theme-style--dark {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.theme-style--dark h1, .theme-style--dark h2, .theme-style--dark h3, .theme-style--dark h4, .theme-style--dark h5, .theme-style--dark h6,
+.theme-style--dark .h1, .theme-style--dark .h2, .theme-style--dark .h3, .theme-style--dark .h4, .theme-style--dark .h5, .theme-style--dark .h6{
+    color: var(--color-white);
+}
+
+.theme-style--dark .wptb-heading .wptb-item--title {
+    color: var(--color-white);
+}
+
+.theme-style--dark .wptb-heading .wptb-item--subtitle {
+    color: var(--color-white);
+}
+
+
+.theme-style--dark .header .mainnav ul.main-menu li ul li a {
+    color: var(--color-black);
+}
+
+.theme-style--dark .wptb-slider .wptb-heading .wptb-item--description {
+    color: var(--color-white);
+}
+
+
+/* Theme Style One */
 :root .theme-style--one {
     --link-color:               #181A0F;
     --link-color-hover:         #CDF683;
@@ -105,27 +134,9 @@ body.theme-style--one {
     --link-color-active:        #1F4CFF;
 }
 
-body.theme-style--two {
-    color: var(--color-white);
-    background-color: var(--color-dark);
-}
-
-.theme-style--two h1, .theme-style--two h2, .theme-style--two h3, .theme-style--two h4, .theme-style--two h5, .theme-style--two h6,
-.theme-style--two .h1, .theme-style--two .h2, .theme-style--two .h3, .theme-style--two .h4, .theme-style--two .h5, .theme-style--two .h6{
-    color: var(--color-white);
-}
-
-.theme-style--two .wptb-heading .wptb-item--title {
-    color: var(--color-white);
-}
 
 .theme-style--two .wptb-heading .wptb-item--subtitle {
     color: rgba(var(--color-white-rgb), 0.5);
-}
-
-
-.theme-style--two .header .mainnav ul.main-menu li ul li a {
-    color: var(--color-black);
 }
 
 .theme-style--two .wptb-country-marquee-wrapper::before {
@@ -151,24 +162,14 @@ body.theme-style--two {
     box-shadow: 0 0 6px rgba(255, 255, 255, .16) inset;
 }
 
-
 /* Theme Style Three */
-.theme-style--three .for-dark-bg .wptb-heading .wptb-item--subtitle,
-.theme-style--three .for-dark-bg .wptb-heading .wptb-item--title {
+:root .theme-style--three {
+    --link-color:               #FFFFFF;
+    --link-color-hover:         #FFFFFF;
+    --link-color-active:        #FFFFFF;
+}
+
+body.theme-style--three {
     color: var(--color-white);
-}
-
-.theme-style--three .for-dark-bg .wptb-heading .wptb-item--title {
-    background: linear-gradient(90deg, #fff 17.81%, #535353 131.33%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-style--three .wptb-heading .wptb-item--description {
-    color: var(--color-three);
-}
-
-.theme-style--three .for-dark-bg .wptb-heading .wptb-item--description {
-    color: var(--color-five);
+    background-color: var(--color-dark-three);
 }

@@ -181,6 +181,9 @@
     --color-dark-two:           #181A0F;
     --color-dark-two-rgb:       24, 26, 15;
 
+    --color-dark-three:           #081336;
+    --color-dark-three-rgb:       8, 19, 54;
+
     /* --color-light:              #D5D7DA;
     --color-light-rgb:          213, 215, 218; */
     
@@ -241,7 +244,7 @@ html {
     font-size: 100%;
 }
 body{
-    color: var(--color-three);
+    color: var(--color-muted);
     background-color: var(--color-white);
     position: relative;
     font-family: var(--font-family-base);
@@ -794,6 +797,13 @@ input[type="submit"]:hover{
     background: radial-gradient(circle,rgba(39, 43, 234, 1) 0%, rgba(139, 73, 209, 1) 100%);
     border: 1px solid transparent;
     box-shadow: inset 0px 1px 1px 0px rgba(var(--color-white-rgb), 0.18);
+}
+
+.btn.gradient2 {
+    background: #00FFAE;
+    background: radial-gradient(circle, rgba(0, 255, 174, 1) 0%, rgba(0, 55, 255, 1) 100%);
+    border: 1px solid transparent;
+    box-shadow: inset 0px 4px 1px 0px rgba(var(--color-white-rgb), 0.14);
 }
 
 .btn.glossy {
