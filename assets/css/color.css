@@ -43,16 +43,6 @@ body.theme-style--one {
     color: #7A5AF8;
 }
 
-.theme-style--one .wptb-heading .wptb-item--subtitle span {
-    color: var(--color-black);
-    background-color: var(--color-green);
-    position: relative;
-}
-
-.theme-style--one .wptb-heading .wptb-item--subtitle::before {
-    display: none;
-}
-
 .theme-style--one .wptb-item--logo__style-circle,
 .theme-style--one .wptb-item--logo__style-circle::before {
     background: none;
@@ -134,9 +124,27 @@ body.theme-style--one {
     --link-color-active:        #1F4CFF;
 }
 
-
 .theme-style--two .wptb-heading .wptb-item--subtitle {
-    color: rgba(var(--color-white-rgb), 0.5);
+    color: var(--color-white);
+}
+
+.theme-style--two .wptb-heading .wptb-item--subtitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 36px;
+    border-radius: 30px;
+    background: -webkit-linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 2, 18, 0) 100%);
+    background: -moz-linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 2, 18, 0) 100%);
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 2, 18, 0) 100%);
+    z-index: -1;
+    animation: wptb_opacity 3s ease-in-out 0.5s infinite;
+}
+
+.theme-style--two .wptb-heading .wptb-item--subtitle span {
+    background: #2A2C3C;
 }
 
 .theme-style--two .wptb-country-marquee-wrapper::before {
@@ -172,4 +180,17 @@ body.theme-style--one {
 body.theme-style--three {
     color: var(--color-white);
     background-color: var(--color-dark-three);
+}
+
+.theme-style--three .wptb-heading .wptb-item--subtitle {
+    color: var(--color-white);
+    background: #00FFAE;
+    background: -webkit-linear-gradient(90deg, rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
+    position: relative;
+}
+
+.theme-style--three .wptb-heading .wptb-item--subtitle span {
+    background: #06454F;
 }

@@ -270,6 +270,11 @@
     transform: translateY(-50%);
 }
 
+.wptb-working-process.two .wptb-item-layer {
+    top: 30%;
+    transform: none;
+}
+
 .wptb-working-process .wptb-working-process--inner {
     position: relative;
     padding: 160px 30px 360px;
@@ -288,6 +293,13 @@
 
 .wptb-working-process .effective {
     bottom: -1px;
+}
+
+.wptb-working-process.two .wptb-working-process--inner {
+    background: -webkit-linear-gradient(180deg,rgba(25, 36, 80, 1) 0%, rgba(36, 39, 172, 0) 100%);
+    background: -moz-linear-gradient(180deg,rgba(25, 36, 80, 1) 0%, rgba(36, 39, 172, 0) 100%);
+    background: linear-gradient(180deg,rgba(25, 36, 80, 1) 0%, rgba(36, 39, 172, 0) 100%);
+    backdrop-filter: blur(20px);
 }
 
 

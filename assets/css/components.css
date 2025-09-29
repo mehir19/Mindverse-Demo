@@ -9,7 +9,7 @@ Ready Components Stylesheet
 }
 .wptb-heading .wptb-item--subtitle {
     position: relative;
-    color: var(--color-white);
+    color: var(--color-black);
     display: inline-block;
     font-size: var(--fs-12);
     font-weight: var(--fw-medium);
@@ -18,9 +18,19 @@ Ready Components Stylesheet
     letter-spacing: 1px;
     padding: 1px;
     margin-bottom: 20px;
+    border-radius: 30px;
 }
 
 .wptb-heading .wptb-item--subtitle span {
+    background-color: var(--color-green);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 11px 16px;
+    border-radius: 30px;
+}
+
+/* .wptb-heading .wptb-item--subtitle span {
     background: #2A2C3C;
     position: relative;
     display: inline-block;
@@ -42,7 +52,7 @@ Ready Components Stylesheet
     background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 2, 18, 0) 100%);
     z-index: -1;
     animation: wptb_opacity 3s ease-in-out 0.5s infinite;
-}
+} */
 
 .wptb-heading .wptb-item--title {
     color: var(--color-black);
@@ -1283,7 +1293,11 @@ Ready Components Stylesheet
     text-align: center;
     padding: 50px 30px;
     border-radius: 16px;
-    box-shadow: 0px -1px 0px 0px rgba(var(--color-white-rgb), 0.22);
+    box-shadow: 0px 1px 0px 0px rgba(var(--color-white-rgb), 0.22) inset;
+}
+
+.wptb-icon-box3.style2.alt .wptb-item--inner {
+    background-color: rgba(var(--color-white-rgb), 0.06);
 }
 
 .wptb-icon-box3.style2 .wptb-item--inner::before,
@@ -1308,6 +1322,16 @@ Ready Components Stylesheet
     background: #210A57;
     background: radial-gradient(circle, rgba(33, 10, 87, 0.84) 0%, rgba(35, 35, 63, 0.66) 100%);
     opacity: 0;
+}
+
+.wptb-icon-box3.style2.alt .wptb-item--inner::before {
+    background: #362168;
+    background: radial-gradient(circle, rgba(54, 33, 104, 0.84) 0%, rgba(72, 72, 123, 0.34) 100%);
+}
+
+.wptb-icon-box3.style2.alt .wptb-item--inner::after {
+    background: #210A57;
+    background: radial-gradient(circle, rgba(33, 10, 87, 0.84) 0%, rgba(35, 35, 63, 0.66) 100%);
 }
 
 .wptb-icon-box3.style2:hover .wptb-item--inner::before {
