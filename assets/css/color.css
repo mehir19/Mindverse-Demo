@@ -147,28 +147,6 @@ body.theme-style--one {
     background: #2A2C3C;
 }
 
-.theme-style--two .wptb-country-marquee-wrapper::before {
-    width: 17%;
-    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.00) 100%);
-}
-
-.theme-style--two .wptb-country-marquee-wrapper::after {
-    width: 17%;
-    background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.00) 100%);
-}
-
-.theme-style--two .wptb-text-marquee2 .wptb-item--text {
-    display: flex;
-    flex-shrink: 0;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 12px 8px 8px;
-    border-radius: 99px;
-    border: .6px solid rgba(255, 255, 255, 8%);
-    background: rgba(255, 255, 255, 4%);
-    box-shadow: 0 0 6px rgba(255, 255, 255, .16) inset;
-}
 
 /* Theme Style Three */
 :root .theme-style--three {
@@ -191,6 +169,15 @@ body.theme-style--three {
     position: relative;
 }
 
+.theme-style--three .wptb-heading .wptb-item--description {
+    color: var(--color-white);
+    font-weight: var(--fw-normal);
+}
+
 .theme-style--three .wptb-heading .wptb-item--subtitle span {
     background: #06454F;
+}
+
+.theme-style--three .wptb-funfacts {
+    overflow: hidden;
 }

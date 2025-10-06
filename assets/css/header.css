@@ -721,48 +721,6 @@ body.left_menu .mr_menu {
 }
 
 
-.wptb-icon-box1.live-chat {
-  padding: 12px 40px;
-}
-.wptb-icon-box1.live-chat .wptb-item--icon {
-  color: var(--color-white);
-  background-color: var(--color-one);
-  position: relative;
-  width: 40px;
-  height: 40px;
-  outline: 3px solid rgba(var(--color-white-rgb), 0.17);
-  margin-right: 5px;
-}
-.wptb-icon-box1.live-chat .wptb-item--icon::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 52px;
-  height: 52px;
-  border-radius: 100%;
-  background-color: rgba(var(--color-one-rgb),.5);
-  z-index: -1;
-}
-.wptb-icon-box1.live-chat .wptb-item--title {
-  color: var(--color-white);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 26px;
-  letter-spacing: 0px;
-}
-.wptb-icon-box1.live-chat .wptb-item--title a {
-  color: var(--color-white);
-}
-.wptb-icon-box1.live-chat .wptb-item--title a:hover {
-  color: var(--color-one);
-}
-.wptb-icon-box1.live-chat .wptb-item--description {
-  color: rgba(var(--color-white-rgb), 0.70);
-  font-size: 12px;
-}
-
 
 /* Sticky Nav */
 .header.sticky {
@@ -823,16 +781,6 @@ body.left_menu .mr_menu {
   color: var(--color-one);
 }
 
-.header.style2 .wptb-icon-box1.live-chat .wptb-item--title,
-.header.style2 .wptb-icon-box1.live-chat .wptb-item--description {
-  color: var(--color-dark);
-}
-.header.style2 .wptb-icon-box1.live-chat .wptb-item--title a {
-  color: var(--color-dark);
-}
-.header.style2 .wptb-icon-box1.live-chat .wptb-item--title a:hover {
-  color: var(--color-one);
-}
 
 /* Header Style 3 */
 .header.style3 {

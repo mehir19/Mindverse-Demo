@@ -191,6 +191,19 @@ Description: Mindverse - HTML Template
         // WOW Init
         new WOW().init();
 
+        $('.wptb-icon-box1').hover(
+            function() {
+                // On hover in: replace 'old-class' with 'new-class'
+                $(this).find('.wptb-item--main-icon').removeClass('wptb-item--icon').addClass('wptb-item--shadow-icon');
+                $(this).find('.wptb-item--sub-icon').removeClass('wptb-item--shadow-icon').addClass('wptb-item--icon');
+            },
+            function() {
+                // On hover out: revert back
+                $(this).find('.wptb-item--main-icon').removeClass('wptb-item--shadow-icon').addClass('wptb-item--icon');
+                $(this).find('.wptb-item--sub-icon').removeClass('wptb-item--icon').addClass('wptb-item--shadow-icon');
+            }
+        );
+
 
         // SVG Effects
         function animatePaths(svg) {
@@ -305,6 +318,7 @@ Description: Mindverse - HTML Template
         animateOrbit("dot3", 90, 0.01, 1);
         // Rotate dot around circles End
 
+
         // Add auto active class 
         // const bannerBoxes = document.querySelectorAll(".wptb-banner-box__top");
         // let bannerIndex = 0;
@@ -384,49 +398,6 @@ Description: Mindverse - HTML Template
         // activateStep(stepIndex);
         // startAutoRotation();
 
-
-
-
-
-
-        // Related Products
-        // var swiperRelatedProducts = new Swiper('.swiper_related_products', {
-        //     slidesPerView: '1',
-        //     centeredSlides: false,
-        //     speed: 1400,
-        //     spaceBetween: 30,
-        //     parallax: true,
-        //     autHeight: true,
-        //     effect: 'slide',
-        //     controller: {
-        //         inverse: true,
-        //     },
-        //     slideToClickedSlide: true,
-        //     lazyLoading: true,
-        //     loop: false,
-        //     keyboard: {
-        //         enabled: true,
-        //     },
-        //     navigation: {
-        //         nextEl: '.swiper-related-products-button-next',
-        //         prevEl: '.swiper-related-products-button-prev',
-        //     },
-        //     pagination: {
-        //         el: '.swiper-related-products-pagination',
-        //         clickable: true
-        //     },
-            
-        //     breakpoints: {
-        //         768: {
-        //             slidesPerView: 2,
-        //             spaceBetween: 30,
-        //         },
-        //         1200: {
-        //             slidesPerView: 3,
-        //             spaceBetween: 65,
-        //         },
-        //     }
-        // }); 
 
         // Totop Button
         $('.totop a').on('click', function(e) {
