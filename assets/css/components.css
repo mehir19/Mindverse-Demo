@@ -590,6 +590,7 @@ Ready Components Stylesheet
     padding: 12px 12px 0px;
 }
 
+
 .wptb-slider.style3 .wptb-image-single .wptb-item--inner img {
     width: 100%;
 }
@@ -599,10 +600,6 @@ Ready Components Stylesheet
     bottom: 0px;
     left: 0;
     right: 0;
-    height: 50%;
-    background: -webkit-linear-gradient(177deg,rgba(8, 19, 54, 0) 0%, rgba(8, 19, 54, 1) 100%);
-    background: -moz-linear-gradient(177deg,rgba(8, 19, 54, 0) 0%, rgba(8, 19, 54, 1) 100%);
-    background: linear-gradient(177deg,rgba(8, 19, 54, 0) 0%, rgba(8, 19, 54, 1) 100%);
     z-index: 2;
 }
 
@@ -1417,15 +1414,6 @@ Ready Components Stylesheet
     opacity: 0;
 }
 
-.wptb-icon-box3.style2.alt .wptb-item--inner::before {
-    background: #362168;
-    background: radial-gradient(circle, rgba(54, 33, 104, 0.84) 0%, rgba(72, 72, 123, 0.34) 100%);
-}
-
-.wptb-icon-box3.style2.alt .wptb-item--inner::after {
-    background: #210A57;
-    background: radial-gradient(circle, rgba(33, 10, 87, 0.84) 0%, rgba(35, 35, 63, 0.66) 100%);
-}
 
 .wptb-icon-box3.style2:hover .wptb-item--inner::before {
     opacity: 0;
@@ -3976,6 +3964,7 @@ Ready Components Stylesheet
     font-size: 12px;
 }
 
+/* Testimonial Type 2 */
 .wptb-testimonial2.style2 .wptb-item--inner::before{
     border: 2px solid transparent;
     background: var(--color-dark-two);
@@ -3986,6 +3975,7 @@ Ready Components Stylesheet
     color: var(--color-white);
 }
 
+/* Testimonial Type 3 */
 .wptb-testimonial2.style3 {
     width: 100%;
 }
@@ -4006,6 +3996,28 @@ Ready Components Stylesheet
 
 .wptb-testimonial2.style3 .wptb-item--inner .wptb-item--meta {
     margin-top: 75px;
+}
+
+/* Testimonial Type 4 */
+.wptb-testimonial2.style4 {
+    width: 100%;
+}
+
+.wptb-testimonial2.style4 .wptb-item--inner {
+    box-shadow: 0 5px 30px 0px rgb(75, 83, 161, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.wptb-testimonial2.style4 .wptb-item--inner::before {
+    background: var(--color-white);
+}
+
+.wptb-testimonial2.style4 .wptb-item--inner .wptb-item--meta {
+    margin-top: 75px;
+}
+.wptb-testimonial2.style4 .wptb-item--inner .wptb-item--description,
+.wptb-testimonial2.style4 .wptb-item--inner .wptb-item--designation {
+    color: rgba(var(--color-dark-four-rgb), 0.7)
 }
 
 
