@@ -344,8 +344,9 @@ Description: Mindverse - HTML Template
 
 
         // Add auto active class 
-        const stepFeatures = document.querySelectorAll(".wptb-nav-feature li");
-        const relatedBoxes = document.querySelectorAll(".wptb-nav-feature-image-list li"); // replace with actual
+        document.querySelectorAll(".wptb-feature-box--feature-inbox, .wptb-feature-box--feature-llm").forEach((wrapper) => {
+        const stepFeatures = wrapper.querySelectorAll(".wptb-nav-feature li");
+        const relatedBoxes = wrapper.querySelectorAll(".wptb-nav-feature-image-list li"); // replace with actual
         // const stepLine = document.querySelector(".pxl-step__feature-line");
 
         let stepIndex = 0;
@@ -392,6 +393,7 @@ Description: Mindverse - HTML Template
         // Initialize
         activateStep(stepIndex);
         startAutoRotation();
+        });
 
 
         // Totop Button
