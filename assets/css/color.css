@@ -275,6 +275,10 @@ body.theme-style--three.theme-style--dark {
     background: linear-gradient(0deg,rgba(25, 36, 80, 1) 0%, rgba(36, 39, 172, 0) 100%);
 }
 
+.theme-style--three.theme-style--dark .wptb-feature-box .wptb-feature-box--description {
+    color: rgba(248, 248, 248, 0.7);
+}
+
 .theme-style--three .wptb-feature-box--9 {
     border-left: 1px solid #EBEBEE;
     border-right: 1px solid #EBEBEE;

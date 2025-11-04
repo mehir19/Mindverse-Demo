@@ -295,28 +295,28 @@ Description: Mindverse - HTML Template
 			infobar: false,
 		});
 
-        // Rotate dot around circles Start
-        function animateOrbit(dotId, radius, speed, offset=0) {
-            const dot = document.getElementById(dotId);
-            const centerX = 190, centerY = 190;
-            let angle = offset;
+        // // Rotate dot around circles Start
+        // function animateOrbit(dotId, radius, speed, offset=0) {
+        //     const dot = document.getElementById(dotId);
+        //     const centerX = 190, centerY = 190;
+        //     let angle = offset;
 
-            function frame() {
-                const x = centerX + radius * Math.cos(angle);
-                const y = centerY + radius * Math.sin(angle);
-                dot.setAttribute("cx", x);
-                dot.setAttribute("cy", y);
-                angle += speed; 
-                requestAnimationFrame(frame);
-            }
-            frame();
-        }
+        //     function frame() {
+        //         const x = centerX + radius * Math.cos(angle);
+        //         const y = centerY + radius * Math.sin(angle);
+        //         dot.setAttribute("cx", x);
+        //         dot.setAttribute("cy", y);
+        //         angle += speed; 
+        //         requestAnimationFrame(frame);
+        //     }
+        //     frame();
+        // }
 
-        // Animate dots with different radii & speeds
-        animateOrbit("dot1", 90, 0.03, 1);
-        animateOrbit("dot2", 90, 0.02, 1);
-        animateOrbit("dot3", 90, 0.01, 1);
-        // Rotate dot around circles End
+        // // Animate dots with different radii & speeds
+        // animateOrbit("dot1", 90, 0.03, 1);
+        // animateOrbit("dot2", 90, 0.02, 1);
+        // animateOrbit("dot3", 90, 0.01, 1);
+        // // Rotate dot around circles End
 
 
         // Add auto active class 
@@ -344,59 +344,54 @@ Description: Mindverse - HTML Template
 
 
         // Add auto active class 
-        // const stepFeatures = document.querySelectorAll(".pxl-step__feature li");
-        // const relatedBoxes = document.querySelectorAll(".pxl-step__content li"); // replace with actual
+        const stepFeatures = document.querySelectorAll(".wptb-nav-feature li");
+        const relatedBoxes = document.querySelectorAll(".wptb-nav-feature-image-list li"); // replace with actual
         // const stepLine = document.querySelector(".pxl-step__feature-line");
 
-        // let stepIndex = 0;
-        // const stepDelay = 2000; // 2 seconds
-        // let stepInterval;
+        let stepIndex = 0;
+        const stepDelay = 2000; // 2 seconds
+        let stepInterval;
 
         // Function to activate item by index
-        // function activateStep(index) {
-        //     stepFeatures.forEach(item => item.classList.remove("active"));
-        //     relatedBoxes.forEach(item => item.classList.remove("active"));
+        function activateStep(index) {
+            stepFeatures.forEach(item => item.classList.remove("active"));
+            relatedBoxes.forEach(item => item.classList.remove("active"));
 
-        //     stepFeatures[index].classList.add("active");
-        //     if (relatedBoxes.length > 0) {
-        //         relatedBoxes[index].classList.add("active");
-        //     }
+            stepFeatures[index].classList.add("active");
+            if (relatedBoxes.length > 0) {
+                relatedBoxes[index].classList.add("active");
+            }
 
-        //     // Update vertical line gradient height
-        //     const totalItems = stepFeatures.length;
-        //     const heightPercent = ((index + 1) / totalItems) * 100; // e.g., 33%, 66%, 100%
-        //     if (stepLine) {
-        //         // Using gradient: top = active color, bottom = dark
-        //         stepLine.style.background = `linear-gradient(to bottom, rgb(46, 144, 250) 0%, rgb(46, 144, 250) ${heightPercent}%, rgb(37, 43, 55) ${heightPercent}%, rgb(37, 43, 55) 100%)`;
-        //     }
-
-        //     stepIndex = index; // update global index
-        // }
+            // Update vertical line gradient height
+            const totalItems = stepFeatures.length;
+            const heightPercent = ((index + 1) / totalItems) * 100; 
+            stepIndex = index; 
+        }
 
         // // Auto-rotation
-        // function startAutoRotation() {
-        //     stepInterval = setInterval(() => {
-        //         activateStep((stepIndex + 1) % stepFeatures.length);
-        //     }, stepDelay);
-        // }
+        function startAutoRotation() {
+            stepInterval = setInterval(() => {
+                activateStep((stepIndex + 1) % stepFeatures.length);
+            }, stepDelay);
+        }
 
         // // Stop auto-rotation
-        // function stopAutoRotation() {
-        //     clearInterval(stepInterval);
-        // }
+        function stopAutoRotation() {
+            clearInterval(stepInterval);
+        }
 
         // // Click event
-        // stepFeatures.forEach((item, index) => {
-        //     item.addEventListener("click", () => {
-        //         activateStep(index);
-        //         stopAutoRotation();
-        //         startAutoRotation();
-        //     });
-        // });
+        stepFeatures.forEach((item, index) => {
+            item.addEventListener("click", () => {
+                activateStep(index);
+                stopAutoRotation();
+                startAutoRotation();
+            });
+        });
 
-        // // Initialize
-        // activateStep(stepIndex);
-        // startAutoRotation();
+        // Initialize
+        activateStep(stepIndex);
+        startAutoRotation();
 
 
         // Totop Button
