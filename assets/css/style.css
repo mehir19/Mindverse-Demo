@@ -151,7 +151,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 60px;
+    gap: 35px;
 }
 
 .wptb-feature-box .wptb-feature-box--heading {
@@ -473,6 +473,7 @@
 }
 
 .theme-style--three .wptb-feature-box--feature-type {
+    position: relative;
     text-align: center;
 }
 
@@ -527,6 +528,66 @@
     height: 580px;
     padding: 55px 40px;
     border-radius: 0px;
+}
+
+.theme-style--three .wptb-feature-box--8 .wptb-feature-box--feature-type .image-two {
+    position: absolute;
+    top: 25%;
+    right: 25px;
+    animation: wptb_spin 30s linear infinite;
+}
+
+.theme-style--three .wptb-feature-box--7 .wptb-feature-box--feature-type .layer-gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -50px;
+}
+
+.theme-style--three .wptb-feature-box--7 .wptb-feature-box--feature-type .imagebox {
+    position: relative;
+    margin-bottom: -93px;
+}
+.theme-style--three .wptb-feature-box--7 .wptb-feature-box--feature-type .imagebox-one {
+    z-index: 4;
+    animation-delay: 2s;
+}
+.theme-style--three .wptb-feature-box--7 .wptb-feature-box--feature-type .imagebox-two {
+    z-index: 3;
+    animation-delay: 3s;
+}
+.theme-style--three .wptb-feature-box--7 .wptb-feature-box--feature-type .imagebox-three {
+    z-index: 2;
+    animation-delay: 4s;
+}
+.theme-style--three .wptb-feature-box--7 .wptb-feature-box--feature-type .imagebox-four {
+    z-index: 1;
+    animation-delay: 5s;
+}
+
+.theme-style--three .wptb-feature-box--6 .wptb-feature-box--feature-type .imagebox {
+    position: relative;
+    margin-bottom: -10px;
+}
+.theme-style--three .wptb-feature-box--6 .wptb-feature-box--feature-type .imagebox-one {
+    z-index: 1;
+    animation-delay: 2s;
+}
+.theme-style--three .wptb-feature-box--6 .wptb-feature-box--feature-type .imagebox-two {
+    z-index: 2;
+    animation-delay: 3s;
+}
+.theme-style--three .wptb-feature-box--6 .wptb-feature-box--feature-type .imagebox-three {
+    z-index: 3;
+    animation-delay: 4s;
+}
+
+.theme-style--three .wptb-feature-box--5 .wptb-feature-box--feature-type .loop-point {
+    position: absolute;
+    left: 41%;
+    top: 26%;
+    display: inline-block;
+    animation: wptb_spin_y 10s linear infinite;
 }
 
 .wptb-speciality .features-box--wrapper {
@@ -2563,4 +2624,20 @@
     height: 70px;
     border: 1px solid rgba(var(--color-white-rgb), 0.06);
     border-radius: 17px;
+}
+
+.theme-style--three .wptb-services .wptb-item-layer {
+    top: 0;
+    bottom: auto;
+    width: auto;
+}
+
+.theme-style--three .wptb-services .wptb-item-layer-one {
+    left: 0;
+    right: auto;
+}
+
+.theme-style--three .wptb-services .wptb-item-layer-two {
+    left: auto;
+    right: 0;
 }
