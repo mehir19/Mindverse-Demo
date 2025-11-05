@@ -538,6 +538,10 @@
     animation: wptb_spin 30s linear infinite;
 }
 
+.theme-style--three .wptb-feature-box--7 .wptb-feature-box--inner {
+    height: 75%;
+}
+
 .theme-style--three .wptb-feature-box--7 .wptb-feature-box--feature-type .layer-gradient {
     position: absolute;
     left: 0;
