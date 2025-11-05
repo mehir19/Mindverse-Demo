@@ -321,3 +321,15 @@ body.theme-style--three.theme-style--dark {
     backdrop-filter: blur(7px);
     box-shadow: none;
 }
+
+.theme-style--three.theme-style--dark .wptb-country-marquee-wrapper::before {
+    background: linear-gradient(90deg, #081336 0%, rgba(8, 19, 54, 0) 100%);
+}
+
+.theme-style--three.theme-style--dark .wptb-country-marquee-wrapper::after {
+    background: linear-gradient(270deg, #081336 0%, rgba(8, 19, 54, 0) 100%);
+}
+
+.theme-style--three.theme-style--dark .wptb-icon-box1 .wptb-item--inner {
+    background-color: transparent
+}
