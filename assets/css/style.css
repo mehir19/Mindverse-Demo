@@ -152,6 +152,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 35px;
+    height: 90%;
 }
 
 .wptb-feature-box .wptb-feature-box--heading {
