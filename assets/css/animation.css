@@ -197,3 +197,65 @@
         opacity: 0;
     }
 }
+
+@keyframes wptb_bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+        transform: translateY(-8px)
+    }
+    60% {
+        -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        transform: translateY(-4px)
+    }
+}
+
+@keyframes wptb_zigzag {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    60% {
+        -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+}
+
+@keyframes wptb_pulse {
+    50% {
+        transform: scale(1.25);
+        opacity: 0
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes wptb_leap {
+    50% {
+        -webkit-transform: translateY(-50%) rotate(-360deg) scale(1.1);
+        transform: translateY(-50%) rotate(-360deg) scale(1.1);
+    }
+}
