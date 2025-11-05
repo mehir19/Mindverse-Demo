@@ -577,6 +577,15 @@ Ready Components Stylesheet
     margin-top: 20px;
 }
 
+.wptb-slider.style3 .wptb-slider--item .wptb-image-floating {
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    /* transform: translateX(-50%); */
+    top: 28%;
+    animation: wptb_spin 40s linear infinite;
+}
+
 .wptb-slider.style3 .wptb-image-single {
     position: relative;
     margin-top: 100px;
