@@ -187,6 +187,9 @@
     --color-dark-four:           #64698E;
     --color-dark-four-rgb:       100, 105, 142;
 
+    --color-dark-five:           #181D27;
+    --color-dark-five-rgb:       24, 29, 39;
+
     /* --color-light:              #D5D7DA;
     --color-light-rgb:          213, 215, 218; */
     
@@ -207,6 +210,12 @@
 
     --color-light-green:        #F7F7F0;
     --color-light-green-rgb:    247, 247, 240;
+    
+    --color-dark-green:           #002B2B;
+    --color-dark-green-rgb:       rgb(0, 43, 43);
+
+     --color-neon:              #E5FF5E;
+    --color-neon-rgb:           229, 255, 94;
 
     --link-color:               #000212;
     --link-color-hover:         #1F4CFF;
@@ -730,6 +739,12 @@ input[type="submit"]:hover{
     color: var(--color-black);
     background: var(--color-green);
     border-color: var(--color-green);
+}
+
+.btn.neon {
+    color: var(--color-dark-green);
+    background: var(--color-neon);
+    border-color: var(--color-neon);
 }
 
 .btn .btn-wrap{

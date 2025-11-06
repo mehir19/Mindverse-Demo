@@ -41,6 +41,16 @@
     .footer .footer-bottom .footer-bottom-inner {
         justify-content: center;
     }
+
+    .footer.style4 .footer-top::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 31%;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -94,6 +104,10 @@
     .wptb-feature-box.wptb-feature-box--1 .wptb-feature-box--top,
     .wptb-feature-box.wptb-feature-box--3 .wptb-feature-box--top {
         text-align: center;
+    }
+
+    .footer.style4 .footer-top::before {
+        display: none;
     }
 
 }

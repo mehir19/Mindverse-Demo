@@ -758,46 +758,43 @@ body.left_menu .mr_menu {
 
 
 /* Header Style 2 */
-.header.style2 {  
-  background-color: var(--color-dark-two);
-  backdrop-filter: blur(40px);
-}
-
-
-.header.style2 .mainnav ul.main-menu li a {
-  color: rgba(var(--color-white-rgb), 0.45);
-}
-
-.header.style2 .mainnav ul.main-menu li.current > a, .header.style2 .mainnav ul.main-menu li.active > a, .header.style2 .mainnav ul.main-menu li:hover > a{
-  color:var(--color-white);
-}
-
-.header.style2 .mainnav ul.main-menu > li.menu-item-has-children > a::after {
-  color: var(--color-dark);
-}
-
-.header.style2 .mainnav ul.main-menu > li > a:hover,
-.header.style2 .mainnav ul.main-menu > li.menu-item-has-children > a:hover::after {
-  color: var(--color-one);
-}
-
-
-/* Header Style 3 */
-.header.style3 {
+.header.style2 {
   top: 30px;
   border-bottom: 0px;
 }
-.header.style3 .header-inner {
+.header.style2 .header-inner {
   background: #08218F;
   background: radial-gradient(circle, rgba(8, 33, 143, 1) 40%, rgba(41, 138, 203, 1) 100%);
   border-radius: 200px;
   padding: 5px 25px;
 }
 
-.header.style3.sticky {
+.header.style2 .mainnav ul.main-menu li a:not(:hover) {
+  color: var(--color-white);
+}
+
+.header.style2 .mainnav ul.main-menu li ul li a:not(:hover) {
+  color: #08218F;
+}
+
+.header.style2.sticky {
   top: 10px;
   background-color: transparent;
 }
+
+/* Header Style 3 */
+.header.style3 .header-inner {
+  padding: 0px 60px;
+}
+
+.header.style3 .mainnav ul.main-menu li a {
+  padding: 35px 0px;
+}
+
+.header.style3.sticky {
+  background-color: var(--color-dark-green);
+}
+
 
 @media screen and (max-width: 1366px) {
   .header .mainnav ul.main-menu > li + li {

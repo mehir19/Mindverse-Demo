@@ -240,6 +240,15 @@
     position: relative;
 }
 
+
+.footer.style3 .widget-title {
+    color: var(--color-white);
+}
+
+.footer.style3 ul li a:not(:hover) {
+    color: rgba(var(--color-white-rgb), 0.45);
+}
+
 .footer.style3 .footer-bottom {
     border-top: 1px solid rgba(var(--color-white-rgb), 0.1);
     padding: 80px 0px;
@@ -248,7 +257,11 @@
 }
 
 .footer.style3 .copyright {
-    color: rgba(var(--color-white-rgb), 0.5);
+    color: rgba(var(--color-white-rgb), 0.55);
+}
+
+.footer.style3 .copyright a {
+    color: rgba(var(--color-white-rgb), 0.85);
 }
 
 .footer.style3 .logo-description {
@@ -306,5 +319,117 @@
 }
 
 .footer.style3 .wptb-banner.wptb-heading .wptb-item--title {
+    color: var(--color-white);
     line-height: 1;
+}
+
+
+/* Footer style 4 */
+.footer.style4 .footer-inner {
+    background: #0C3035;
+    background: linear-gradient(180deg,rgba(12, 48, 53, 1) 20%, rgba(2, 22, 35, 1) 80%);
+    position: relative;
+}
+
+.footer.style4 .footer-top {
+    position: relative;
+    border-top: 1px solid rgba(var(--color-white-rgb), 0.1);
+    padding-top: 70px;
+    padding-bottom: 90px;
+    margin-top: 15px;
+}
+
+.footer.style4 .footer-top::before {
+    content: '';
+    position: absolute;
+    left: 40%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    background-color:  rgba(var(--color-white-rgb), 0.1);
+}
+
+.footer.style4 .widget-title {
+    color: var(--color-white);
+}
+
+.footer.style4 ul li a:not(:hover) {
+    color: rgba(var(--color-white-rgb), 0.45);
+}
+
+.footer.style4 .logo-description {
+    color: rgba(var(--color-white-rgb), 0.55);
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+.footer.style4 .footer-text {
+    font-size: 15px;
+    line-height: 26px;
+}
+
+
+.footer.style4 .wptb-newsletter {
+    background: transparent;
+}
+
+.footer.style4 .wptb-newsletter::before, .footer.style4 .wptb-newsletter::after {
+    display: none;
+}
+
+.footer.style4 .wptb-newsletter .wptb-newsletter--inner {
+    padding: 0px 0px;
+}
+
+.footer.style4 .wptb-newsletter .wptb-heading {
+    margin-bottom: 20px;
+}
+
+.footer.style4 .wptb-newsletter .wptb-heading .wptb-item--description {
+    color: var(--color-white);
+}
+
+.footer.style4 .footer-bottom {
+    border-top: 1px solid rgba(var(--color-white-rgb), 0.1);
+    padding: 35px 0px;
+}
+
+.footer.style4 .footer-bottom .footer-bottom-inner {
+    justify-content: center;
+}
+
+.footer.style4 .copyright {
+    color: rgba(var(--color-white-rgb), 0.55);
+}
+
+.footer.style4 .copyright a {
+    color: rgba(var(--color-white-rgb), 0.85);
+}
+
+.footer.style4 .footer-nav li + li {
+    margin-top: 22px;
+}
+
+.footer.style4 .wptb-social-box {
+    margin-top: 40px;
+}
+
+.footer.style4 .wptb-social-box ul {
+    gap: 8px;
+}
+
+.footer.style4 .wptb-social-box ul li a {
+    background-color: #0C4651;
+    color: var(--color-white);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-medium);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0C4651;
+    border-radius: 100%;
 }
