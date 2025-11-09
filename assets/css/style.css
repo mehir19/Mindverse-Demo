@@ -2477,3 +2477,20 @@
     right: 0;
     bottom: 100px;
 }
+
+.wptb-services-two .wptb-services--inner {
+    background-color: #0A4040;
+    padding: 90px 120px;
+}
+
+.wptb-image-box2.style3 .wptb-feature-box {
+    background: #299F9B;
+    background: -webkit-linear-gradient(200deg,rgba(41, 159, 155, 0.4) 0%, rgba(15, 57, 56, 0.4) 100%);
+    background: -moz-linear-gradient(200deg,rgba(41, 159, 155, 0.4) 0%, rgba(15, 57, 56, 0.4) 100%);
+    background: linear-gradient(200deg,rgba(41, 159, 155, 0.4) 0%, rgba(15, 57, 56, 0.4) 100%);
+    backdrop-filter: blur(50px);
+}
+
+.wptb-image-box2.style3 .wptb-feature-box--feature-inbox {
+    background: transparent;
+}

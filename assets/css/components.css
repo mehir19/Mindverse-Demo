@@ -2042,6 +2042,7 @@ Ready Components Stylesheet
     margin-top: 40px;
 }
 
+/* Style 2 */
 .wptb-image-box2.style2 .wptb-item--inner .wptb-item--category {
     color: var(--color-black);
     background-color: var(--color-green);
@@ -2058,6 +2059,27 @@ Ready Components Stylesheet
 
 .wptb-image-box2.style2 .wptb-list1 .wptb--item .wptb-item--text {
     color: rgba(var(--color-black-rgb), 0.7);
+}
+
+/* Style 3 */
+.wptb-image-box2.style3 {
+    margin-bottom: 0px;
+}
+
+.wptb-image-box2.style3 .wptb-item--inner {
+    background: transparent;
+    border: 0px;
+    padding: 0px;
+    box-shadow: none;
+}
+
+.wptb-image-box2.style3 .wptb-item--inner .wptb-item--description,
+.wptb-image-box2.style3 .wptb-list1 .wptb--item .wptb-item--text {
+    color: var(--color-white);
+}
+
+.wptb-image-box2.style3 .wptb-list1 .wptb--item + .wptb--item {
+    margin-top: 20px;
 }
 
 
