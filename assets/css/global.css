@@ -834,6 +834,12 @@ input[type="submit"]:hover{
     background: linear-gradient(90deg, rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
     box-shadow: inset 0px 4px 1px 0px rgba(var(--color-white-rgb), 0.14);
 }
+.btn.gradient4 {
+    background: #174E49;
+    background: -webkit-linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
+    background: linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
+}
 
 .btn.glossy {
     background: rgba(68, 73, 166, 0.46);

@@ -306,6 +306,8 @@
 .footer.style3 .wptb-list1 {
     margin-top: 40px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px 50px;
 }
 
 .footer.style3 .wptb-list1 .wptb--item + .wptb--item {
