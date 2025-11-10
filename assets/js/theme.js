@@ -344,8 +344,8 @@ Description: Mindverse - HTML Template
 
 
         // Add auto active class 
-        document.querySelectorAll(".wptb-feature-box--feature-inbox, .wptb-feature-box--feature-llm").forEach((wrapper) => {
-        const stepFeatures = wrapper.querySelectorAll(".wptb-nav-feature li");
+        document.querySelectorAll(".wptb-feature-box--feature-inbox, .wptb-feature-box--feature-llm, .pxl-step__style-2").forEach((wrapper) => {
+        const stepFeatures = wrapper.querySelectorAll(".wptb-nav-feature li, .pxl-step__feature li");
         const relatedBoxes = wrapper.querySelectorAll(".wptb-nav-feature-image-list li"); // replace with actual
         // const stepLine = document.querySelector(".pxl-step__feature-line");
 

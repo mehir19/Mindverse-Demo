@@ -558,7 +558,7 @@ img.emoji {
 }
 
 .for-dark-bg p, .for-dark-bg div {
-    color: var(--color-five);
+    color: var(--color-white);
 }
 
 /* Default Input type */
@@ -739,6 +739,12 @@ input[type="submit"]:hover{
     color: var(--color-black);
     background: var(--color-green);
     border-color: var(--color-green);
+}
+
+.btn.green2 {
+    color: var(--color-white);
+    background: #12715B;
+    border-color: #12715B;
 }
 
 .btn.neon {

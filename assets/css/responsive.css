@@ -8,12 +8,15 @@
         line-height: calc(2.4rem + 3vw);
     }
 
-    .wptb-heading .wptb-item--title,
-    .wptb-heading.md .wptb-item--title {
+    .wptb-heading .wptb-item--title {
         font-size: calc(1.5rem + 2.6vw);
         line-height: calc(1.5rem + 2.6vw);
     }
     
+    .wptb-heading.md .wptb-item--title {
+        font-size: calc(1.5rem + 1.6vw);
+    }
+
     .wptb-heading.lg .wptb-item--title {
         font-size: calc(2rem + 3vw);
         line-height: calc(2rem + 3vw);
@@ -33,6 +36,9 @@
     .wptb-image-box2.alt .wptb-item--inner,
     .wptb-image-box2 .wptb-item--inner {
         flex-direction: column;
+    }
+    .wptb-image-box2.style3 .wptb-item--inner {
+        flex-direction: unset;
     }
 
     .wptb-image-box2 .wptb-item--image {
@@ -116,13 +122,22 @@
         text-align: center;
     }
 
+    .wptb-icon-box3.style3 .wptb-item--inner {
+        gap: 70px;
+    }
+
+    .wptb-packages1.style2 {
+        flex: auto;
+    }
+    
+    .wptb-cta .wptb-item-layer {
+        display: none;
+    }
+
     .footer.style4 .footer-top::before {
         display: none;
     }
 
-    .wptb-cta .wptb-item-layer {
-        display: none;
-    }
 
 }
 
