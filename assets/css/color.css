@@ -682,6 +682,17 @@ body.theme-style--five {
     background: #095B4E;
 }
 
+.theme-style--six .header.style3 {
+    border-bottom: 1px solid rgba(79, 79, 79, 0.16);
+}
+
+.theme-style--six .header.style3.sticky {
+    background-color: var(--color-white);
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(222, 241, 237, 1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(222, 241, 237, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(222, 241, 237, 1) 100%);
+}
+
 .theme-style--six h1, .theme-style--six h2, .theme-style--six h3, .theme-style--six h4, .theme-style--six h5, .theme-style--six h6,
 .theme-style--six .h1, .theme-style--six .h2, .theme-style--six .h3, .theme-style--six .h4, .theme-style--six .h5, .theme-style--six .h6{
     color: var(--color-dark-green);
