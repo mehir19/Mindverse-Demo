@@ -165,7 +165,7 @@
 }
 
 .header .mainnav ul.main-menu li.current > a, .header .mainnav ul.main-menu li.active > a, .header .mainnav ul.main-menu li:hover > a {
-  color: var(--color-one);
+  color: #7A5AF8;
 }
 
 .header .mainnav ul.main-menu li ul {
@@ -197,7 +197,7 @@
 }
 
 .header .mainnav ul.main-menu li ul li a:hover {
-  color: var(--color-one);
+  color: #7A5AF8;
 }
 
 .header .mainnav ul.main-menu li ul li:last-child > a {
@@ -252,7 +252,7 @@
 }
 
 .header .mainnav ul.main-menu > li.menu-item-has-children.current > a::after, .header .mainnav ul.main-menu > li.menu-item-has-children.active > a::after, .header .mainnav ul.main-menu > li.menu-item-has-children:hover > a::after {
-  color: var(--color-one);
+  color: #7A5AF8;
 }
 
 
@@ -769,12 +769,16 @@ body.left_menu .mr_menu {
   padding: 5px 25px;
 }
 
-.header.style2 .mainnav ul.main-menu li a:not(:hover) {
+.header.style2 .mainnav ul.main-menu li a {
   color: var(--color-white);
 }
 
-.header.style2 .mainnav ul.main-menu li ul li a:not(:hover) {
-  color: #08218F;
+.header.style2 .mainnav ul.main-menu li.current > a, .header.style2 .mainnav ul.main-menu li.active > a, .header.style2 .mainnav ul.main-menu li:hover > a {
+    color: #00FFAE;
+}
+
+.header.style2 .mainnav ul.main-menu li ul li a {
+    color: #081336;
 }
 
 .header.style2.sticky {
@@ -789,6 +793,22 @@ body.left_menu .mr_menu {
 
 .header.style3 .mainnav ul.main-menu > li > a {
   padding: 25px 0px;
+}
+
+.header.style3 .mainnav ul.main-menu li a {
+  color: var(--color-white);
+}
+
+.header.style3 .mainnav ul.main-menu li.current > a, .header.style3 .mainnav ul.main-menu li.active > a, .header.style3 .mainnav ul.main-menu li:hover > a {
+    color: var(--color-neon);
+}
+  
+.header.style3 .mainnav ul.main-menu > li.menu-item-has-children.current > a::after, .header.style3 .mainnav ul.main-menu > li.menu-item-has-children.active > a::after, .header.style3 .mainnav ul.main-menu > li.menu-item-has-children:hover > a::after {
+    color: var(--color-neon);
+}
+
+.header.style3 .mainnav ul.main-menu li ul li a {
+    color: var(--color-dark-green);
 }
 
 .header.style3.sticky {

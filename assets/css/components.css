@@ -624,6 +624,11 @@ Ready Components Stylesheet
     overflow: visible;
 }
 
+.wptb-slider.style3 .wptb-item--button .btn {
+    border-radius: 8px;
+    padding: 9px 15px;
+}
+
 .wptb-slider.style3 .wptb-orbit {
     position: absolute;
     left: 0;

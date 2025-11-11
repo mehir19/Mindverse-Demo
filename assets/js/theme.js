@@ -344,10 +344,10 @@ Description: Mindverse - HTML Template
 
 
         // Add auto active class 
-        document.querySelectorAll(".wptb-feature-box--feature-inbox, .wptb-feature-box--feature-llm, .pxl-step__style-2").forEach((wrapper) => {
-        const stepFeatures = wrapper.querySelectorAll(".wptb-nav-feature li, .pxl-step__feature li");
-        const relatedBoxes = wrapper.querySelectorAll(".wptb-nav-feature-image-list li"); // replace with actual
-        // const stepLine = document.querySelector(".pxl-step__feature-line");
+        document.querySelectorAll(".wptb-feature-box--feature-inbox, .wptb-feature-box--feature-llm, .wptb-process-two").forEach((wrapper) => {
+        const stepFeatures = wrapper.querySelectorAll(".wptb-nav-feature li, .wptb-step__style-2 li");
+        const relatedBoxes = wrapper.querySelectorAll(".wptb-nav-feature-image-list li, .wptb-step__content li"); // replace with actual
+        // const stepLine = document.querySelector(".wptb-step__feature-line");
 
         let stepIndex = 0;
         const stepDelay = 2000; // 2 seconds
