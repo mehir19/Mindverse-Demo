@@ -2864,20 +2864,6 @@ Ready Components Stylesheet
     }
 }
 
-
-/* Process */
-.wptb-process-three .wptb-image-single {
-    position: relative;
-    margin-top: 100px;
-}
-
-.wptb-process-three .wptb-image-single .wptb-item--inner {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-
 /* FAQ/Accordion */
 .wptb-accordion1 {
     position: relative;
@@ -3031,12 +3017,13 @@ Ready Components Stylesheet
     justify-content: space-between;
     cursor: pointer;
     transition: var(--transition-base);
-    border: 0px solid transparent;
+    border: 1px solid #074146;
     border-radius: 10px;
 }
 
 .wptb-accordion2 .wptb--item.active .wptb-item-title {
     color: var(--color-neon);
+    border-color: transparent;
     background-color: #074146;
 }
 
@@ -4193,6 +4180,7 @@ Ready Components Stylesheet
 /* Testimonial Type 5 */
 .wptb-testimonial2.style5 {
     width: auto;
+    margin: 0px 0px;
 }
 
 .wptb-testimonial2.style5 .wptb-item--inner {
@@ -6406,51 +6394,5 @@ svg.radial-progress {
 
 .wptb-career-grid .wptb-item--inner .wptb-item--holder .wptb-button-link:hover {
     background-color: var(--color-one);
-    color: var(--color-white);
-}
-
-/* Work Process - Two */
-.wptb-process-two-wrapper {
-    position: relative;
-}
-
-.wptb-process-two-wrapper::before {
-    content: '';
-    width: auto;
-    height: 100%;
-    border-left: 1px dashed var(--color-three);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 28px;
-    transition: var(--transition-base);
-}
-
-.wptb-process-two-wrapper .wptb-icon-box3 + .wptb-icon-box3 {
-    margin-top: 60px;
-    margin-bottom: 0px;
-}
-
-.wptb-process-two-wrapper .wptb-icon-box3 .wptb-item--inner {
-    background-color: transparent;
-    padding: 0px;
-    align-items: start;
-}
-
-.wptb-process-two-wrapper .wptb-icon-box3 .wptb-item--icon {
-    color: var(--color-white);
-    background-color: var(--color-one);
-    width: 54px;
-    height: 54px;
-    font-size: var(--fs-16);
-    font-weight: var(--fw-semibold);
-}
-
-.wptb-process-two-wrapper .wptb-icon-box3 .wptb-item--icon:before {
-    display: none;
-}
-
-.wptb-process-two-wrapper .wptb-icon-box3:hover .wptb-item--icon {
-    background-color: var(--color-two);
     color: var(--color-white);
 }
