@@ -629,6 +629,10 @@ Ready Components Stylesheet
     padding: 9px 15px;
 }
 
+.wptb-slider.style3 .wptb-image-single img {
+    width: 100%;
+}
+
 .wptb-slider.style3 .wptb-orbit {
     position: absolute;
     left: 0;

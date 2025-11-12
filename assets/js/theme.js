@@ -350,7 +350,7 @@ Description: Mindverse - HTML Template
         // const stepLine = document.querySelector(".wptb-step__feature-line");
 
         let stepIndex = 0;
-        const stepDelay = 2000; // 2 seconds
+        const stepDelay = 20000; // 2 seconds
         let stepInterval;
 
         // Function to activate item by index

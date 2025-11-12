@@ -2297,6 +2297,7 @@
 .wptb-process-two .wptb-image-single li {
     height: 0px;
     overflow: hidden;
+    text-align: center;
     transition: height .5s ease;
 }
 
@@ -2373,6 +2374,7 @@
 .wptb-feature-box--feature-inbox .wptb-nav-feature-image-list h6 {
     font-weight: var(--fw-light);
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .wptb-feature-box--feature-inbox .wptb-nav-feature-image-list li {
@@ -2383,7 +2385,7 @@
 }
 
 .wptb-feature-box--feature-inbox .wptb-nav-feature-image-list li.active {
-    height: 300px;
+    height: 250px;
 }
 
 .wptb-feature-box--feature-inbox .wptb-nav-feature-image-list li .wptb-nav-feature-image-box {
@@ -2496,9 +2498,13 @@
     position: relative;
     border-radius: 16px;
     width: auto;
-    height: 540px;
-    flex-shrink: 0;
+    height: auto;
+    flex: 1;
     overflow: hidden;
+}
+
+.wptb-image-box2.style3 .wptb-item--inner .wptb-item--holder {
+    flex: 1;
 }
 
 .wptb-image-box2.style3 .wptb-feature-box {
@@ -2514,7 +2520,7 @@
     background: transparent;
     box-shadow: none;
     backdrop-filter: none;
-    border: navajowhite;
+    border: none;
 }
 
 .wptb-image-box2.style3 .wptb-nav-feature {
@@ -2572,9 +2578,16 @@
     letter-spacing: 1px;
 }
 
+.wptb-image-box2.style3 .wptb-nav-feature {
+    gap: 8px;
+}
+
 .wptb-image-box2.style3 .wptb-nav-feature .wptb-nav-feature-item .wptb-nav-feature-icon {
     background: rgba(var(--color-white-rgb), 0.10);
-    border: 1px solid rgba(var(--color-white-rgb), 0.22)
+    border: 1px solid rgba(var(--color-white-rgb), 0.22);
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
 }
 
 .wptb-image-box2.style3 .wptb-nav-feature .wptb-nav-feature-item:hover .wptb-nav-feature-icon, 
@@ -2597,6 +2610,11 @@
     box-shadow: none;
     border-radius: 0px;
     background: transparent;
+    height: auto;
+}
+
+.wptb-image-box2.style3 .wptb-feature-box--feature-inbox .wptb-nav-feature-image-list li.active {
+    height: 360px;
 }
 
 .wptb-image-box2.style3 .wptb-feature-box--feature-inbox .wptb-nav-feature-image-list li .wptb-nav-feature-image-box img {
@@ -2615,4 +2633,27 @@
     top: 25%;
     display: inline-block;
     animation: wptb_spin_y 10s linear infinite;
+}
+
+.localvideo-bg {
+    position: absolute;
+    height: 305px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.localvideo-bg video {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
 }

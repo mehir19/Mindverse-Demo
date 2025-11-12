@@ -233,6 +233,7 @@
 /* Footer style 3 */
 .footer.style3 .footer-inner {
     position: relative;
+    z-index: 1;
     padding-top: 0px;
 }
 
