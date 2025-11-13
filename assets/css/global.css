@@ -224,19 +224,6 @@
     --gradient-color-from:      #272BEA;
     --gradient-color-to:        #8B49D1;
 
-    
-/* 
-    --gradient-color-1: #EC8CF9;
-    --gradient-color-2: #A789ED;
-    --gradient-color-3: #66DDCB;
-    --gradient-color-4: #4FE3FC;
-    --gradient-color-5: #0478CE;
-    --gradient-color-6: #EC8CF9;
-    --gradient-color-7: #A789ED;
-    --gradient-color-8: #66DDCB;
-    --gradient-color-9: #4FE3FC;
-    --gradient-color-10: #0478CE; */
-
     --gradient-one: linear-gradient(0deg, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
     --gradient-radial: radial-gradient(circle, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
 
@@ -290,13 +277,6 @@ body{
         max-width: 950px;
     }
 }
-
-/* min-width: 1400px */
-/* @media screen and (min-width: 1400px){
-    .container {
-        max-width: 1650px;
-    }
-} */
 
 /* max-width: 1199px */
 @media screen and (max-width: 991.98px) {
@@ -970,16 +950,6 @@ input[type="submit"]:hover{
     height: 2px;
     background-color: var(--color-one);
 }
-
-/* Use this markup based on above css */
-/* <ul class="pagination">
-    <li><a class="disabled page-number previous" href="#"><i class="ion-ios-arrow-thin-left"></i></a></li>
-    <li><span class="page-number current">1</span></li>
-    <li><a class="page-number" href="#">2</a></li>
-    <li>.....</li>
-    <li><a class="page-number" href="#">9</a></li>
-    <li><a class="page-number next" href="#"><i class="ion-ios-arrow-thin-right"></i></a></li>
-</ul> */
 
 
 /* Margin Both */
