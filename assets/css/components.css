@@ -87,16 +87,6 @@ Ready Components Stylesheet
     letter-spacing: -1.6px;
 }
 
-
-@media screen and (max-width: 767.9px) {
-   
-}
-
-@media screen and (max-width: 575.9px) {
-
-}
-
-
 /* Page Heading */
 .wptb-page-heading {
     position: relative;
@@ -613,11 +603,6 @@ Ready Components Stylesheet
 }
 
 /* Style - 3 */
-.wptb-slider.style3 {
-    background: #154846;
-    background: radial-gradient(circle, rgba(21, 72, 70, 1) 0%, rgba(2, 22, 35, 1) 70%);
-    overflow: visible;
-}
 
 .wptb-slider.style3 .wptb-slider--item {
     padding-bottom: 65px;
