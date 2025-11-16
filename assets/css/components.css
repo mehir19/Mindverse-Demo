@@ -603,6 +603,9 @@ Ready Components Stylesheet
 }
 
 /* Style - 3 */
+.wptb-slider.style3 {
+    overflow: visible;
+}
 
 .wptb-slider.style3 .wptb-slider--item {
     padding-bottom: 65px;
