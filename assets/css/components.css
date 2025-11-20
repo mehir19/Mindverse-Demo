@@ -87,6 +87,13 @@ Ready Components Stylesheet
     letter-spacing: -1.6px;
 }
 
+element.style {
+    visibility: visible;
+    animation-name: fadeInUp;
+    border: 1px solid #000;
+    padding: 5px 5px;
+}
+
 /* Page Heading */
 .wptb-page-heading {
     position: relative;
@@ -626,6 +633,15 @@ Ready Components Stylesheet
     left: 0;
     right: 0;
     bottom: -16%;
+}
+
+/* Style - 4 */
+.wptb-slider.style4 .wptb-item--button .btn.gradient5 {
+    border: 5px solid var(--color-white);
+}
+
+.wptb-slider.style4 .wptb-item--button .btn.transparent {
+    color: var(--color-dark-six);
 }
 
 /* Layer Items */

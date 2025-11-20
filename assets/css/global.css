@@ -196,8 +196,8 @@
     --color-dark-seven:           #626262;
     --color-dark-seven-rgb:       98, 98, 98;
 
-    /* --color-light:              #D5D7DA;
-    --color-light-rgb:          213, 215, 218; */
+    --color-light:              #D5D7DA;
+    --color-light-rgb:          213, 215, 218;
     
     
     --color-white:              #FFFFFF;
@@ -211,8 +211,11 @@
     --color-green:              #CDF683;
     --color-green-rgb:          205, 246, 131;
     
-    --color-green-two:              #00FFAE;
-    --color-green-two-rgb:          0, 255, 174;
+    --color-green-two:          #00FFAE;
+    --color-green-two-rgb:       0, 255, 174;
+ 
+    --color-green-three:        #A8FFBB;
+    --color-green-three-rgb:    168, 255, 187;
 
     --color-light-green:        #F7F7F0;
     --color-light-green-rgb:    247, 247, 240;
@@ -709,36 +712,6 @@ input[type="submit"]:hover{
     border-color: var(--color-two);
 }
 
-.btn.black {
-    color: var(--color-white);
-    background: var(--color-black);
-    border-color: var(--color-black);
-}
-
-.btn.white {
-    color: var(--color-black);
-    background: var(--color-white);
-    border-color: var(--color-white);
-}
-
-.btn.green {
-    color: var(--color-black);
-    background: var(--color-green);
-    border-color: var(--color-green);
-}
-
-.btn.green2 {
-    color: var(--color-white);
-    background: #12715B;
-    border-color: #12715B;
-}
-
-.btn.neon {
-    color: var(--color-dark-green);
-    background: var(--color-neon);
-    border-color: var(--color-neon);
-}
-
 .btn .btn-wrap{
 	position: relative;
     z-index: 1;
@@ -776,6 +749,44 @@ input[type="submit"]:hover{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+
+.btn.black {
+    color: var(--color-white);
+    background: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.btn.white {
+    color: var(--color-black);
+    background: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn.green {
+    color: var(--color-black);
+    background: var(--color-green);
+    border-color: var(--color-green);
+}
+
+.btn.green2 {
+    color: var(--color-white);
+    background: #12715B;
+    border-color: #12715B;
+}
+
+.btn.green3 {
+    color: var(--color-dark-six);
+    background: var(--color-green-three);
+    border-color: var(--color-green-three);
+}
+
+.btn.neon {
+    color: var(--color-dark-green);
+    background: var(--color-neon);
+    border-color: var(--color-neon);
+}
+
 .btn.overlay:before {
     position: absolute;
     width: 200%;
@@ -831,6 +842,13 @@ input[type="submit"]:hover{
     background: -webkit-linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
     background: -moz-linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
     background: linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
+}
+
+.btn.gradient5 {
+    background: #1C2F41;
+    background: -webkit-linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
+    background: linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
 }
 
 .btn.glossy {

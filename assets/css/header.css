@@ -252,7 +252,7 @@
 }
 
 .header .mainnav ul.main-menu > li.menu-item-has-children.current > a::after, .header .mainnav ul.main-menu > li.menu-item-has-children.active > a::after, .header .mainnav ul.main-menu > li.menu-item-has-children:hover > a::after {
-  color: #7A5AF8;
+  color: inherit;
 }
 
 
@@ -736,7 +736,8 @@ body.left_menu .mr_menu {
 }
 
 .header.sticky .header-top,
-.header.style2.sticky .header-top {
+.header.style2.sticky .header-top,
+.header.style4.sticky .header-top {
 	max-height: 0px;
 	opacity: 0;
   visibility: hidden;
@@ -814,6 +815,35 @@ body.left_menu .mr_menu {
 
 .header.style3.sticky {
   background-color: var(--color-dark-green);
+}
+
+
+/* Header Style 2 */
+.header.style4 {
+  top: 30px;
+  border-bottom: 0px;
+}
+.header.style4 .header-inner {
+  background: var(--color-dark-six);
+  border-radius: 10px;
+  padding: 5px 25px;
+}
+
+.header.style4 .mainnav ul.main-menu li a {
+  color: var(--color-white);
+}
+
+.header.style4 .mainnav ul.main-menu li.current > a, .header.style4 .mainnav ul.main-menu li.active > a, .header.style4 .mainnav ul.main-menu li:hover > a {
+    color: var(--color-green-three);
+}
+
+.header.style4 .mainnav ul.main-menu li ul li a {
+    color: var(--color-dark-six);
+}
+
+.header.style4.sticky {
+  top: 10px;
+  background-color: transparent;
 }
 
 
