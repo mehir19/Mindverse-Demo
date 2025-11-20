@@ -2637,11 +2637,13 @@
 
 .localvideo-bg {
     position: absolute;
-    height: 305px;
+    height: 380px;
     overflow: hidden;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -30px;
+    transform: rotateX(50deg);
+    transform-origin: bottom;
 }
 
 .localvideo-bg video {
@@ -2651,9 +2653,28 @@
     top: 0;
     bottom: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: 50% 20%;
+    mask-image: url('../img/videos/video-bg-1.png');
+    -webkit-mask-image: url('../img/videos/video-bg-1.png');
+    /* mask-size: contain;
+    -webkit-mask-size: contain; */
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+.unieffect iframe{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transform: rotate(180deg);
 }

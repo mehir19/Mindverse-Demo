@@ -1,6 +1,3 @@
-
-
-
 /* Theme Style - One */
 :root .theme-style--one {
     --link-color:               #FFFFFF;
@@ -935,7 +932,6 @@ body.theme-style--five {
 .theme-style--six .wptb-testimonial2.style5 .wptb-item--inner .wptb-item--title {
     color: var(--color-dark-green);
 }
-
 
 .theme-style--six .wptb-light-bg-wrapper {
     background: #FFFFFF;
