@@ -981,6 +981,9 @@ body.theme-style--five {
     background: var(--color-white);
     border: 1px solid var(--color-light);
     padding: 5px 20px 5px 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: -0.28px;
 }
 
 .theme-style--eight .wptb-heading .wptb-item--subtitle span {
