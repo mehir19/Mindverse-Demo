@@ -2487,6 +2487,27 @@
     bottom: -60px;
 }
 
+.wptb-cta-two .wptb-cta--inner {
+    padding: 105px 100px 105px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.wptb-cta-two .wptb-cta--inner.wptb-heading .wptb-item--title,
+.wptb-cta-two .wptb-cta--inner .wptb-item--description,
+.wptb-cta-two .wptb-cta--inner .trial-period {
+    color: var(--color-white);
+}
+
+.wptb-cta-two .wptb-item-layer.wptb-item-layer-one {
+    left: 40%;
+    bottom: -55%;
+    top: auto;
+}
+
+.wptb-cta-two .wptb-item--button .btn.white {
+    outline: 5px solid rgba(var(--color-white-rgb), 0.3);
+}
 
 /* Services */
 .wptb-services-two .wptb-services--inner {
