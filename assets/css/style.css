@@ -116,6 +116,50 @@
     overflow: hidden;
 }
 
+.wptb-testimonial-marquee-wrapper.vertical-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-height: 830px;
+    padding: 15px 15px 0px;
+}
+
+.vertical-shadow::before,
+.vertical-shadow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-size: cover;
+}
+
+.vertical-shadow::before {
+    height: 100px;
+    top: 0;
+}
+
+.vertical-shadow::after {
+    height: 100px;
+    top: auto;
+    bottom: 0;
+}
+
+.white-shadow::before {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.white-shadow::after {
+    background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.dark-shadow::before {
+    background: linear-gradient(180deg, #081336 0%, rgba(8, 19, 54, 0) 100%);
+}
+
+.dark-shadow::after{
+    background: linear-gradient(0deg, #081336 0%, rgba(8, 19, 54, 0) 100%);
+}
+
 .no-bg.wptb-item--logo__style-circle {
     height: auto;
     background: transparent;
@@ -2737,4 +2781,52 @@
     position: absolute;
     right: 7%;
     top: 36%;
+}
+
+.wptb-note-text {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 65px;
+}
+.wptb-note-text .wptb-note-text--inner {
+    background: #060F16;
+    background: -webkit-linear-gradient(0deg, rgba(6, 15, 22, 0) 0%, rgba(6, 15, 22, 0.05) 100%);
+    background: -moz-linear-gradient(0deg, rgba(6, 15, 22, 0) 0%, rgba(6, 15, 22, 0.05) 100%);
+    background: linear-gradient(0deg, rgba(6, 15, 22, 0) 0%, rgba(6, 15, 22, 0.05) 100%);
+    display: inline-block;
+    font-weight: var(--fw-medium);
+    padding: 10px 15px;
+    border: 1px solid rgba(var(--color-dark-six-rgb), 0.05);
+    border-radius: 10px;
+}
+
+.wptb-note-text .wptb-note-text--inner a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1.7px;
+}
+
+/* Testimonial */
+.wptb-testimonial2.style4.outline {
+    background: #EEF2F6;
+    background: -webkit-linear-gradient(0deg,rgba(238, 242, 246, 0) 0%, rgba(238, 242, 246, 1) 100%);
+    background: -moz-linear-gradient(0deg,rgba(238, 242, 246, 0) 0%, rgba(238, 242, 246, 1) 100%);
+    background: linear-gradient(0deg,rgba(238, 242, 246, 0) 0%, rgba(238, 242, 246, 1) 100%);
+    border: 1px solid #EDEDED;
+    padding: 11px;
+    border-radius: 25px;
+}
+
+.wptb-testimonial2.style4.outline .wptb-item--inner {
+    background: var(--color-white);
+    border: 1px solid #EDEDED;
+    border-radius: 20px;
+}
+
+.wptb-testimonial2.style4.outline .wptb-item--inner {
+    padding: 21px 21px;
+}
+
+.wptb-testimonial2.style4.outline .wptb-item--inner .wptb-item--description {
+    margin-top: 0px;
 }

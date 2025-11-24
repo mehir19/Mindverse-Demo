@@ -187,36 +187,6 @@ body.theme-style--two {
     box-shadow: inset 0px 4px 1px 0px rgba(var(--color-white-rgb), 0.14);
 }
 
-.theme-style--three .wptb-testimonial-marquee-wrapper {
-    position: relative;
-    overflow: hidden;
-    max-height: 830px;
-    padding: 15px 15px 0px;
-}
-
-.theme-style--three .wptb-testimonial-marquee-wrapper::before,
-.theme-style--three .wptb-testimonial-marquee-wrapper::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-}
-
-.theme-style--three .wptb-testimonial-marquee-wrapper::before {
-    height: 100px;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.theme-style--three .wptb-testimonial-marquee-wrapper::after {
-    height: 100px;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .theme-style--three .wptb-heading.md .wptb-item--title {
     font-size: 40px;
     line-height: 1.2;
@@ -446,14 +416,6 @@ body.theme-style--two {
     overflow: hidden;
 }
 
-.theme-style--three .wptb-testimonial-marquee-wrapper::before {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-}
-
-.theme-style--three .wptb-testimonial-marquee-wrapper::after {
-    background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-}
-
 .theme-style--three .wptb-feature-box--5 {
     background: -webkit-linear-gradient(180deg,rgba(0, 57, 206, 1) 0%, rgba(64, 98, 188, 1) 100%);
     background: -moz-linear-gradient(180deg,rgba(0, 57, 206, 1) 0%, rgba(64, 98, 188, 1) 100%);
@@ -572,14 +534,6 @@ body.theme-style--three.theme-style--dark {
     background: -moz-linear-gradient(177deg,rgba(8, 19, 54, 0) 0%, rgba(8, 19, 54, 1) 100%);
     background: linear-gradient(177deg,rgba(8, 19, 54, 0) 0%, rgba(8, 19, 54, 1) 100%);
     height: 50%;
-}
-
-.theme-style--three.theme-style--dark .wptb-testimonial-marquee-wrapper::before {
-    background: linear-gradient(180deg, #081336 0%, rgba(8, 19, 54, 0) 100%);
-}
-
-.theme-style--three.theme-style--dark .wptb-testimonial-marquee-wrapper::after {
-    background: linear-gradient(0deg, #081336 0%, rgba(8, 19, 54, 0) 100%);
 }
 
 .theme-style--three.theme-style--dark .wptb-feature-box--1,
@@ -1028,4 +982,9 @@ body.theme-style--five {
     text-transform: capitalize;
     border-radius: 10px;
     padding: 17px 30px;
+    letter-spacing: 0px;
+}
+
+.theme-style--eight .video-button--two .btn {
+    border-radius: 100%;
 }
