@@ -216,6 +216,9 @@
  
     --color-green-three:        #A8FFBB;
     --color-green-three-rgb:    168, 255, 187;
+    
+    --color-green-four:        #BFF747;
+    --color-green-four-rgb:    191, 247, 71;
 
     --color-light-green:        #F7F7F0;
     --color-light-green-rgb:    247, 247, 240;
@@ -234,6 +237,7 @@
     --gradient-color-to:        #8B49D1;
 
     --gradient-one: linear-gradient(0deg, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
+    --gradient-two: linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
     --gradient-radial: radial-gradient(circle, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
 
     /* Responsive Breakdown */
@@ -837,6 +841,7 @@ input[type="submit"]:hover{
     background: linear-gradient(90deg, rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
     box-shadow: inset 0px 4px 1px 0px rgba(var(--color-white-rgb), 0.14);
 }
+
 .btn.gradient4 {
     background: #174E49;
     background: -webkit-linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
@@ -849,6 +854,13 @@ input[type="submit"]:hover{
     background: -webkit-linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
     background: -moz-linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
     background: linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
+}
+
+.btn.gradient6 {
+    background: #96CF1D;
+    background: -webkit-linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
+    background: -moz-linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
+    background: linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
 }
 
 .btn.glossy {

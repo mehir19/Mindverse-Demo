@@ -654,12 +654,43 @@ element.style {
     background: linear-gradient(0deg,rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
 }
 
-.wptb-slider.style4 .wptb-item--button .btn.gradient5 {
+.wptb-slider.style4 .wptb-item--button .btn:nth-child(1) {
     border: 5px solid var(--color-white);
 }
 
 .wptb-slider.style4 .wptb-item--button .btn.transparent {
     color: var(--color-dark-six);
+}
+
+
+.wptb-slider.style4 .wptb-heading .wptb-item--subtitle {
+    color: var(--color-dark-six);
+    background: rgba(var(--color-dark-six-rgb), 0.03);
+    border: 1px solid rgba(var(--color-dark-six-rgb), 0.35);
+    border-radius: 10px;
+    padding: 9px 15px;
+}
+
+.wptb-slider.style4 .wptb-heading .wptb-item--subtitle span {
+    color: var(--color-white);
+    background: var(--color-dark-six);
+    margin-right: 15px;
+}
+
+.wptb-slider.style4 .wptb-heading .wptb-item--subtitle a {
+    color: inherit;
+}
+
+.wptb-slider.style4 .wptb-heading .wptb-item--title .text-under-shape {
+    position: absolute;
+    left: 46%;
+    top: 75%;
+    transform: translateX(-50%);
+}
+.wptb-slider.style4 .wptb-heading .wptb-item--title .text-under-shape svg {
+    position: relative;
+    left: auto;
+    top: auto;
 }
 
 /* Layer Items */
@@ -1711,6 +1742,7 @@ element.style {
     border: 1px solid #EDEDED;
     border-radius: 20px;
     padding: 12px;
+    overflow: hidden;
 }
 
 .wptb-icon-box3.style6 .wptb-item--icon {
@@ -1836,6 +1868,59 @@ element.style {
 }
 .wptb-icon-box3.style6.wptb-icon-box3--item5 .wptb-item--icon {
     background: #FFF5DB;
+}
+
+/* Style  */
+.wptb-icon-box3.style7 {
+    background-color: var(--color-white);
+    border: 1px solid #D5D7DA;
+    border-radius: 16px;
+    padding: 38px;
+}
+
+.wptb-icon-box3.style7:hover,
+.wptb-icon-box3.style7.active {
+    background-color: var(--color-green-three);
+}
+
+.wptb-icon-box3.style7 .wptb-item--icon {
+    color: var(--color-dark-six);
+    background-color: var(--color-green-three);
+    width: 60px;
+    height: 60px;
+    border-width: 0px;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wptb-icon-box3.style7:hover .wptb-item--icon,
+.wptb-icon-box3.style7.active .wptb-item--icon {
+    background-color: var(--color-white);
+}
+
+.wptb-icon-box3.style7 .wptb-item--holder {
+    text-align: center;
+    padding: 30px 10px 16px;
+}
+
+.wptb-icon-box3.style7 .wptb-item--title {
+    font-size: 18px;
+    font-weight: var(--fw-semibold);
+    margin-bottom: 12px;
+}
+.wptb-icon-box3.style7 .wptb-item--description {
+    color: var(--color-dark-seven);
+    font-family: var(--font-family-three);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: var(--fw-medium);
+    margin-bottom: 0px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 /* Iconbox 4 */
@@ -3577,7 +3662,7 @@ element.style {
 }
 
 .wptb-packages1.style3.active .wptb-item--inner {
-    background: #A8FFBB;
+    background: var(--color-green-three);
 }
 
 .wptb-packages1.style3 .wptb-item--package-icon {    
@@ -4605,8 +4690,8 @@ svg.radial-progress {
     width: 130px;
     height: 130px;
     color: var(--color-white);
-    background: #A8FFBB;
-    border: 1px solid #A8FFBB;
+    background: var(--color-green-three);
+    border: 1px solid var(--color-green-three);
     border-radius: 100%;
     padding: 0px;
     font-size: 50px;
@@ -4616,7 +4701,7 @@ svg.radial-progress {
 }
 
 .video-button--two .btn:hover {
-    background: #A8FFBB;
+    background: var(--color-green-three);
     color: var(--color-one);
 }
 
@@ -4626,7 +4711,7 @@ svg.radial-progress {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid #A8FFBB;
+    border: 1px solid var(--color-green-three);
     -webkit-border-radius: 100%;
     -khtml-border-radius: 100%;
     -moz-border-radius: 100%;

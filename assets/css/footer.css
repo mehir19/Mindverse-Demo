@@ -437,3 +437,137 @@
     border: 1px solid #0C4651;
     border-radius: 100%;
 }
+
+
+/* Footer style 5 */
+.footer.style5 .footer-inner {
+    background: #060F16;
+    position: relative;
+    padding-top: 110px;
+    overflow: hidden;
+}
+
+.footer.style5 .footer-inner::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 1145px;
+    height: 1145px;
+    background-color: rgba(85, 254, 136, 0.8);
+    border-radius: 100%;
+    filter: blur(500px);
+}
+
+.footer.style5 .footer-top {
+    position: relative;
+    border-top: 1px solid rgba(var(--color-white-rgb), 0.1);
+    padding-top: 70px;
+    padding-bottom: 25px;
+    margin-top: 15px;
+}
+
+.footer.style5 .widget-title {
+    color: var(--color-white);
+}
+
+.footer.style5 ul li a:not(:hover) {
+    color: rgba(var(--color-white-rgb), 0.45);
+}
+
+.footer.style5 .logo-description {
+    color: rgba(var(--color-white-rgb), 0.55);
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+.footer.style5 .footer-text {
+    color: rgb(251, 250, 249, 0.60);
+    font-size: 20px;
+    font-weight: var(--fw-medium);
+    line-height: 30px;
+}
+
+
+.footer.style5 .wptb-newsletter {
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+.footer.style5 .wptb-newsletter::before, 
+.footer.style5 .wptb-newsletter::after {
+    display: none;
+}
+
+.footer.style5 .wptb-newsletter .wptb-newsletter--inner {
+    padding: 0px 0px;
+}
+.footer.style5 .wptb-newsletter .wptb-newsletter-form .form-control {
+    background-color: rgba(var(--color-white-rgb), 0.12);
+    border-color: transparent;
+    height: 54px;
+    border-radius: 10px;
+}
+
+.footer.style5 .wptb-newsletter .wptb-newsletter-form button.btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    min-width: 150px;
+    height: 50px;
+    font-family: var(--font-family-three);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.footer.style5 .wptb-newsletter .wptb-heading {
+    margin-bottom: 20px;
+}
+
+.footer.style5 .wptb-newsletter .wptb-heading .wptb-item--description {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: var(--fw-semibold);
+}
+
+.footer.style5 .footer-bottom {
+    padding: 5px 0px 80px;
+}
+
+.footer.style5 .copyright {
+    color: rgba(var(--color-white-rgb), 0.55);
+}
+
+.footer.style5 .copyright a {
+    color: rgba(var(--color-white-rgb), 0.85);
+}
+
+.footer.style5 .footer-nav li + li {
+    margin-top: 22px;
+}
+
+.footer.style5 .wptb-social-box {
+    margin-top: 40px;
+}
+
+.footer.style5 .wptb-social-box ul {
+    gap: 8px;
+}
+
+.footer.style5 .wptb-social-box ul li a {
+    background-color: rgba(var(--color-white-rgb), 0.15);
+    color: var(--color-white);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-medium);
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid rgba(var(--color-white-rgb), 0.15);
+    border-radius: 8px;
+}
