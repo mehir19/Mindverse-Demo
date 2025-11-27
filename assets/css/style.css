@@ -168,16 +168,6 @@
     background: linear-gradient(0deg, #000000 0%, rgba(8, 19, 54, 0) 100%);
 }
 
-/* .black-shadow::before {
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    filter: blur(58px);
-}
-
-.black-shadow::after{
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    filter: blur(58px);
-} */
-
 .no-bg.wptb-item--logo__style-circle {
     height: auto;
     background: transparent;

@@ -228,6 +228,9 @@
 
      --color-neon:              #E5FF5E;
     --color-neon-rgb:           229, 255, 94;
+    
+    --color-blue:                #2563EB;
+    --color-blue-rgb:            37, 99, 235;
 
     --link-color:               #000212;
     --link-color-hover:         #1F4CFF;
@@ -238,6 +241,8 @@
 
     --gradient-one: linear-gradient(0deg, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
     --gradient-two: linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
+    --gradient-three: linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    --gradient-four: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(2, 42, 106, 1) 100%);
     --gradient-radial: radial-gradient(circle, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
 
     /* Responsive Breakdown */
@@ -791,6 +796,12 @@ input[type="submit"]:hover{
     border-color: var(--color-neon);
 }
 
+.btn.blue {
+    color: var(--color-white);
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+}
+
 .btn.overlay:before {
     position: absolute;
     width: 200%;
@@ -857,10 +868,18 @@ input[type="submit"]:hover{
 }
 
 .btn.gradient6 {
+    color: var(--color-dark-six);
     background: #96CF1D;
     background: -webkit-linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
     background: -moz-linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
     background: linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
+}
+
+.btn.gradient7 {
+    background: #BB7AE6;
+    background: -webkit-linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    background: -moz-linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
 }
 
 .btn.glossy {

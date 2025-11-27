@@ -155,6 +155,14 @@
     .wptb-packages1.style2 {
         flex: auto;
     }
+
+    .wptb-icon-box3.style7 {
+        padding: 15px;
+    }
+
+    .wptb-integration .features-box--wrapper {
+        padding: 90px 20px 90px 20px;
+    }
     
     .wptb-feature-box.wptb-feature-box--11 .wptb-feature-box--feature-type .loop-point,
     .wptb-cta .wptb-item-layer {
