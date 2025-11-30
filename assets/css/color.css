@@ -960,7 +960,6 @@ body.theme-style--seven,
 
 .theme-style--seven .wptb-heading .wptb-item--subtitle {
     color: var(--color-white);
-    background-color: var(--color-dark-six);
     border: 1px solid rgba(var(--color-light-rgb), 0.3);
     padding: 5px 20px 5px 5px;
     text-transform: capitalize;
@@ -1305,7 +1304,6 @@ body.theme-style--eight,
 }
 .theme-style--eight .wptb-heading .wptb-item--subtitle {
     color: var(--color-dark-six);
-    background: var(--color-white);
     border: 1px solid var(--color-light);
     padding: 5px 20px 5px 5px;
     text-transform: capitalize;
@@ -1358,7 +1356,6 @@ body.theme-style--ten,
 
 .theme-style--ten .wptb-heading .wptb-item--subtitle {
     color: var(--color-dark-six);
-    background: var(--color-white);
     border: 1px solid var(--color-light);
     padding: 5px 20px 5px 5px;
     text-transform: capitalize;
@@ -1385,4 +1382,17 @@ body.theme-style--ten,
     letter-spacing: 0px;
     padding: 12px 32px;
     border-width: 0px;
+}
+
+
+/* For Dark BG */
+.for-dark-bg .wptb-heading .wptb-item--subtitle,
+.for-dark-bg .wptb-heading .wptb-item--title,
+.for-dark-bg .wptb-heading .wptb-item--description {
+    color: var(--color-white);
+}
+
+.for-dark-bg .wptb-heading .wptb-item--subtitle,
+.for-dark-bg .wptb-accordion3 .wptb--item {
+    border: 1px solid rgba(var(--color-white-rgb), 0.34);
 }

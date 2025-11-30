@@ -3011,3 +3011,77 @@
     filter: blur(300px);
     animation: wptb_zigzag_three 6s linear infinite alternate;
 } */
+
+.section-separator {
+    background: #535862;
+    background: -webkit-linear-gradient(90deg,rgba(83, 88, 98, 0) 0%, rgba(83, 88, 98, 0.8) 25%, rgba(83, 88, 98, 1) 50%, rgba(83, 88, 98, 0.8) 75%, rgba(83, 88, 98, 0) 100%);
+    background: -moz-linear-gradient(90deg,rgba(83, 88, 98, 0) 0%, rgba(83, 88, 98, 0.8) 25%, rgba(83, 88, 98, 1) 50%, rgba(83, 88, 98, 0.8) 75%, rgba(83, 88, 98, 0) 100%);
+    background: linear-gradient(90deg,rgba(83, 88, 98, 0) 0%, rgba(83, 88, 98, 0.8) 25%, rgba(83, 88, 98, 1) 50%, rgba(83, 88, 98, 0.8) 75%, rgba(83, 88, 98, 0) 100%);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    height: 1px;
+}
+
+/* Contact Form */
+.wptb-contact-one::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(var(--color-black-rgb), 0.76);
+    z-index: 1;
+}
+
+.wptb-contact-one .wptb-bg-gallery {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.wptb-contact-one .wptb-form--wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 115px 0px;
+}
+
+.wptb-contact-one .wptb-form {
+    background: var(--gradient-three);
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.wptb-contact-one .wptb-heading .wptb-item--title  {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.wptb-contact-one .wptb-form--inner {
+    background-color: rgba(var(--color-black-rgb), 0.88);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.wptb-contact-one .wptb-form input.form-control {
+    background-color: rgba(var(--color-white-rgb), 0.05);
+    border-color: rgba(var(--color-white-rgb), 0.10);
+    height: 42px;
+}
+
+.wptb-contact-one .wptb-form textarea.form-control {
+    background-color: rgba(var(--color-white-rgb), 0.05);
+    border-color: rgba(var(--color-white-rgb), 0.10);
+    height: 140px;
+}
+
+.wptb-contact-one .wptb-form label {
+    color: rgba(var(--color-white-rgb), 0.8);
+    display: inline-block;
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}

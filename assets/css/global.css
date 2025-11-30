@@ -877,9 +877,9 @@ input[type="submit"]:hover{
 
 .btn.gradient7 {
     background: #BB7AE6;
-    background: -webkit-linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
-    background: -moz-linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
-    background: linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-linear-gradient(90deg,rgba(18                                   7, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    background: -moz-linear-gradient(90deg,rgba(187, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(90deg,rgba(187, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
 }
 
 .btn.glossy {

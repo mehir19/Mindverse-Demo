@@ -75,6 +75,12 @@ Ready Components Stylesheet
 /* --------------- */
 
 
+.wptb-heading.sm .wptb-item--title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -1.4px;
+}
+
 .wptb-heading.md .wptb-item--title {
     font-size: 48px;
     line-height: 1.2;
@@ -961,6 +967,55 @@ element.style {
     justify-content: center;
     align-items: center;
     transition: var(--transition-base);
+}
+
+/* Marquee One */
+.wptb-text-marquee4.wptb-slide-to-left, 
+.wptb-text-marquee4.wptb-slide-to-right {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.wptb-text-marquee4 .wptb-item--container {
+    position: relative;
+    white-space: nowrap;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wptb-text-marquee4.wptb-slide-to-left .wptb-text-marquee--inner, 
+.wptb-text-marquee4.wptb-slide-to-right .wptb-text-marquee--inner {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.wptb-text-marquee4.wptb-slide-to-left .wptb-text-marquee--inner {
+    margin-bottom: 20px;
+}
+
+.wptb-text-marquee4 .wptb-text-marquee--inner {
+    -webkit-animation: wptb_right_left 80s linear infinite;
+    animation: wptb_right_left 80s linear infinite;
+}
+
+.wptb-text-marquee4.wptb-slide-to-right .wptb-text-marquee--inner {
+    -webkit-animation: wptb_left_right 80s linear infinite;
+    animation: wptb_left_right 80s linear infinite;
+}
+
+.wptb-text-marquee4 .wptb-item--text {
+    min-width: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(var(--color-white-rgb), 0.1);
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 /* Iconbox 1 */
@@ -2947,7 +3002,6 @@ element.style {
     z-index: 1;
 }
 .wptb-accordion3 .wptb--item {
-    background: var(--gradient-four);
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(var(--color-black-rgb), 0.38);
@@ -2965,7 +3019,6 @@ element.style {
 }
 
 .wptb-accordion3 .wptb-item-title {
-    background-color: var(--color-white);
     position: relative;
     min-height: 70px;
     display: flex;
@@ -3476,7 +3529,6 @@ element.style {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
 }
 
 .wptb-packages1 .wptb-item--package-tag {
@@ -3733,7 +3785,7 @@ element.style {
 }
 
 /* Style 3 */
-.wptb-packages1.active:before {
+.wptb-packages1.style3.active:before {
     display: none;
 }
 .wptb-packages1.style3 .wptb-item--inner {    
@@ -3886,6 +3938,159 @@ element.style {
 }
 
 .wptb-packages1.style3 .wptb-item--holder::before {
+    display: none;
+}
+
+
+/* Price Style 4 */
+.wptb-packages1.style4 {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    background: #000000;
+    background: -webkit-linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.06) 100%);
+    background: -moz-linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.06) 100%);
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.06) 100%);
+    /* opacity: 0.3; */
+    box-shadow: inset 0px 0px 0px 1.3px rgba(var(--color-white-rgb), 0.10);
+    overflow: visible;
+}
+
+.wptb-packages1.style4.active {
+   background: var(--gradient-four);
+}
+
+.wptb-packages1.style4.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 19px 156px 0px rgba(var(--color-blue-rgb), 0.25);
+    transform: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    filter: none;
+}
+
+.wptb-packages1.style4.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 2.6px 19px 26px rgba(var(--color-black-rgb), 0.3);
+}
+
+.wptb-packages1.style4 .wptb-item--inner {
+    background-color: transparent;
+    border: 0px solid transparent;
+    position: relative;
+    width: 100%;
+    border-radius: 0px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 32px;
+}
+
+.wptb-packages1.style4 .wptb-item--inner .wptb-item--package span {
+    color: var(--color-white);
+    background-color: transparent;
+    border-radius: 0px;
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: var(--fw-medium);
+    letter-spacing: -.36px;
+    padding: 0px;
+}
+
+.wptb-packages1.style4 .wptb-item--package-intro {
+    color: rgba(var(--color-white-rgb), 0.6);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: var(--fw-medium);
+    margin-bottom: 26px;
+}
+
+.wptb-packages1.style4 .wptb-item--inner .wptb-item--price {
+    color: var(--color-white);
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    font-weight: var(--fw-semibold);
+    margin-bottom: 0px;
+    border-top: 1px solid rgba(var(--color-white-rgb), 0.1);
+    border-bottom: 1px solid rgba(var(--color-white-rgb), 0.1);
+    padding: 15px 0px;
+
+}
+
+.wptb-packages1.style4 .wptb-item--price-text,
+.wptb-packages1.style4 .wptb-item--price-note {
+    color: rgba(var(--color-white-rgb), 0.6);
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.wptb-packages1.style4 .wptb-item--price-note {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.wptb-packages1.style4 .wptb-item--inner .wptb-item--price del {
+    color: var(--color-five);
+}
+
+.wptb-packages1.style4 .wptb-item--inner .wptb-item--price sup, 
+.wptb-packages1.style4 .wptb-item--inner .wptb-item--price sub {
+    color: rgba(var(--color-white-rgb), 0.60);
+    font-size: 20px;
+    font-weight: var(--fw-semibold);
+    line-height: 1;
+    letter-spacing: 0px;
+}
+
+.wptb-packages1.style4 .wptb-list1 .wptb--item .wptb-item--text {
+    color: rgba(var(--color-white-rgb), 0.60);
+    font-size: 18px;
+    font-weight: var(--fw-medium);
+}
+
+.wptb-packages1.style4 .wptb-item--holder {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.wptb-packages1.style4 .wptb-item-title {
+    font-family: var(--font-family-heading);
+    font-size: 18px;
+    font-weight: var(--fw-normal);
+    line-height: 21px;
+    letter-spacing: -0.36px;
+    margin-bottom: 20px;
+}
+
+.wptb-packages1.style4 .wptb-item--button {
+    margin-top: 170px;
+}
+
+.wptb-packages1.style4 .btn {
+    color: var(--color-white);
+    background: rgba(var(--color-white-rgb), 0.10);
+    border-color: transparent;
+    padding: 17px 10px;
+}
+
+.wptb-packages1.style4.active .btn {
+    background-color: var(--color-blue);
+}
+
+.wptb-packages1.style4 .wptb-item--holder::before {
     display: none;
 }
 
@@ -4313,6 +4518,83 @@ element.style {
 
 .wptb-testimonial2.style5 .wptb-item--inner .wptb-item--meta {
     margin-top: 85px;
+}
+
+/* Testimonial Type 6 */
+.wptb-testimonial2.style6 {
+    width: 100%;
+}
+
+.wptb-testimonial2.style6 .wptb-item--inner {
+    background-color: rgba(var(--color-white-rgb),.3);
+    backdrop-filter: blur(40px);
+    border: 1px solid var(--color-light);
+    padding: 40px;
+    min-height: 615px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wptb-testimonial2.style6 .wptb-item--inner::before {
+    background: transparent;
+    filter: blur(200px);
+    left: auto;
+    top: -150px;
+    right: -150px;
+    bottom: auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+.wptb-testimonial2.style6.blue .wptb-item--inner::before {
+    background: rgba(164, 220, 255, 0.55);
+}
+
+.wptb-testimonial2.style6.purple .wptb-item--inner::before {
+    background: rgba(226, 164, 255, 0.5);
+}
+
+.wptb-testimonial2.style6 .wptb-item--inner .wptb-item--meta {
+    margin-top: 40px;
+}
+.wptb-testimonial2.style6 .wptb-item--inner .wptb-item--description {
+    color: var(--color-dark-six);
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: var(--fw-medium);
+}
+
+.wptb-testimonial2.style6 .wptb-item--inner .wptb-item--title {
+    color: var(--color-dark-six);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.wptb-testimonial2.style6 .wptb-item--inner .wptb-item--designation {
+    color: var(--color-dark-seven);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+}
+
+.for-dark-bg .wptb-testimonial2.style6 .wptb-item--inner {
+    background-color: rgba(var(--color-black-rgb), 0.3);
+    border: 1px solid rgba(var(--color-white-rgb), 0.4);
+}
+
+.for-dark-bg .wptb-testimonial2.style6 .wptb-item--inner .wptb-item--description {
+    color: rgba(var(--color-white-rgb), 0.6);
+}
+
+.for-dark-bg .wptb-testimonial2.style6 .wptb-item--inner .wptb-item--title {
+    color: var(--color-white);
 }
 
 /* Testimonial Layout - Three */
