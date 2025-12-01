@@ -112,6 +112,10 @@
         left: 44%;
         top: 30%;
     }
+    .wptb-testimonial2.style6 .wptb-item--inner .wptb-item--description {
+        font-size: 17px;
+        line-height: 26px;
+    }
 
     .footer.style3 .wptb-banner,
     .wptb-cta .wptb-cta--inner {
