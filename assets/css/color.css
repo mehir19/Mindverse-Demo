@@ -1437,3 +1437,21 @@ body.theme-style--ten,
     background: rgba(var(--color-white-rgb), 0.05);
     border: 1px solid rgba(var(--color-white-rgb), 0.10);
 }
+
+.for-dark-bg.wptb-slider.style5 .wptb-heading .wptb-item--title .highlight {
+    color: var(--color-white);
+    background: transparent;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: inherit;
+}
+
+.for-dark-bg.wptb-slider.style5 .btn.two {
+    color: var(--color-white);
+    background-color: rgba(var(--color-white-rgb), 0.05);
+    border: 1px solid rgba(var(--color-white-rgb), 0.10);
+}
+
+.for-dark-bg .wptb-icon-box3.style5 .wptb-item--description {
+    color: rgba(var(--color-white-rgb), 0.6);
+}

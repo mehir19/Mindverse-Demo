@@ -323,6 +323,118 @@
     }
 }
 
+@keyframes floating1 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 0px;
+        top: -85px;
+    }
+    50% {
+        left: 85px;
+        top: 85px;
+    }
+    75% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: -85px;
+    }
+}
+
+@keyframes floating2 {
+    0% {
+        left: auto;
+        right: 0px;
+        top: 0px;
+    }
+    25% {
+        left: auto;
+        right: 0px;
+        top: -85px;
+    }
+    50% {
+        left: auto;
+        right: 85px;
+        top: 85px;
+    }
+    75% {
+        left: auto;
+        right: 0px;
+        top: 0px;
+    }
+    100% {
+        left: auto;
+        right: 0px;
+        top: -85px;
+    }
+}
+
+@keyframes floating3 {
+    0% {
+        left: 0px;
+        top: auto;
+        bottom: 0px;
+    }
+    25% {
+        left: 0px;
+        top: auto;
+        bottom: -100px;
+    }
+    50% {
+        left: 85px;
+        top: auto;
+        bottom: 100px;
+    }
+    75% {
+        left: 0px;
+        top: auto;
+        bottom: 0px;
+    }
+    100% {
+        left: 0px;
+        top: auto;
+        bottom: -100px;
+    }
+}
+
+@keyframes floating4 {
+    0% {
+        left: auto;
+        top: auto;
+        right: 0px;
+        bottom: 0px;
+    }
+    25% {
+        left: auto;
+        top: auto;
+        right: 0px;
+        bottom: -100px;
+    }
+    50% {
+        left: auto;
+        top: auto;
+        right: 85px;
+        bottom: 100px;
+    }
+    75% {
+        left: auto;
+        top: auto;
+        right: 0px;
+        bottom: 0px;
+    }
+    100% {
+        left: auto;
+        top: auto;
+        right: 0px;
+        bottom: -100px;
+    }
+}
+
 .effect_bounce {
     animation: wptb_bounce 10s linear infinite;
 }
