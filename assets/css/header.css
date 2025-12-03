@@ -847,6 +847,9 @@ body.left_menu .mr_menu {
 }
 
 /* Header Style 5 */
+.header.style5 {
+  border-bottom: 0px;
+}
 .header.style5 .header-inner {
   padding: 10px 60px;
 }
