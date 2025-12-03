@@ -818,7 +818,7 @@ body.left_menu .mr_menu {
 }
 
 
-/* Header Style 2 */
+/* Header Style 4 */
 .header.style4 {
   top: 30px;
   border-bottom: 0px;
@@ -844,6 +844,39 @@ body.left_menu .mr_menu {
 .header.style4.sticky {
   top: 10px;
   background-color: transparent;
+}
+
+/* Header Style 5 */
+.header.style5 .header-inner {
+  padding: 10px 60px;
+}
+
+.header.style5 .mainnav ul.main-menu > li > a {
+  padding: 25px 0px;
+}
+
+.header.style5 .mainnav ul.main-menu li a {
+  color: var(--color-dark-six);
+}
+
+.header.style5 .mainnav ul.main-menu li.current > a, .header.style5 .mainnav ul.main-menu li.active > a, .header.style5 .mainnav ul.main-menu li:hover > a {
+    color: var(--color-blue);
+}
+  
+.header.style5 .mainnav ul.main-menu > li.menu-item-has-children.current > a::after, .header.style5 .mainnav ul.main-menu > li.menu-item-has-children.active > a::after, .header.style5 .mainnav ul.main-menu > li.menu-item-has-children:hover > a::after {
+    color: var(--color-blue);
+}
+
+.header.style5 .mainnav ul.main-menu li ul li a {
+    color: var(--color-dark-six);
+}
+
+.header.style5 .btn {
+  border-radius: 12px;
+}
+
+.header.style5.sticky {
+  background-color: var(--color-white);
 }
 
 

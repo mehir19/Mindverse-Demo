@@ -793,6 +793,12 @@ input[type="submit"]:hover{
     border-color: var(--color-blue);
 }
 
+.btn.outline {
+    color: var(--color-black);
+    background: transparent;
+    border-color: var(--color-light);
+}
+
 .btn.overlay:before {
     position: absolute;
     width: 200%;

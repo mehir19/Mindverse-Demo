@@ -3,9 +3,11 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .wptb-slider .wptb-heading .wptb-item--title {
+    .wptb-slider .wptb-heading .wptb-item--title,
+    .wptb-slider.style5 .wptb-heading .wptb-item--title {
         font-size: calc(2.4rem + 3vw);
         line-height: calc(2.4rem + 3vw);
+        letter-spacing: 0px;
     }
 
     .wptb-heading .wptb-item--title {
@@ -72,6 +74,10 @@
         padding: 10px 20px;
     }
 
+    .wptb-slider.style5 .wptb-item-layer {
+        display: none;
+    }
+
     .wptb-image-box2 .wptb-item--image {
         width: 100%;
         height: 300px;
@@ -112,6 +118,11 @@
         left: 44%;
         top: 30%;
     }
+
+    .wptb-testimonial2.style6 .wptb-item--inner {
+        min-height: 450px;
+    }
+
     .wptb-testimonial2.style6 .wptb-item--inner .wptb-item--description {
         font-size: 17px;
         line-height: 26px;
