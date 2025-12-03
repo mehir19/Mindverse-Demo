@@ -1400,53 +1400,53 @@ body.home-style--five,
 
 
 /* For Dark BG */
-.for-dark-bg.header.style5 .mainnav ul.main-menu > li > a {
+.home-style--five .for-dark-bg.header.style5 .mainnav ul.main-menu > li > a {
     color: var(--color-white);
 }
 
-.for-dark-bg.header.style5 .mainnav ul.main-menu li.active > a {
+.home-style--five .for-dark-bg.header.style5 .mainnav ul.main-menu li.active > a {
     color: var(--color-blue);
 }
 
-.for-dark-bg.header.style5.sticky {
+.home-style--five .for-dark-bg.header.style5.sticky {
     background-color: var(--color-dark-six);
 }
 
-.for-dark-bg .wptb-heading .wptb-item--subtitle,
-.for-dark-bg .wptb-heading .wptb-item--title,
-.for-dark-bg .wptb-heading .wptb-item--description {
+.home-style--five .for-dark-bg .wptb-heading .wptb-item--subtitle,
+.home-style--five .for-dark-bg .wptb-heading .wptb-item--title,
+.home-style--five .for-dark-bg .wptb-heading .wptb-item--description {
     color: var(--color-white);
 }
 
-.for-dark-bg .wptb-heading .wptb-item--subtitle,
-.for-dark-bg .wptb-accordion3 .wptb--item {
+.home-style--five .for-dark-bg .wptb-heading .wptb-item--subtitle,
+.home-style--five .for-dark-bg .wptb-accordion3 .wptb--item {
     border: 1px solid rgba(var(--color-white-rgb), 0.34);
 }
 
-.for-dark-bg .wptb-image-box3,
-.for-dark-bg .wptb-image-box3 .wptb-item--image {
+.home-style--five .for-dark-bg .wptb-image-box3,
+.home-style--five .for-dark-bg .wptb-image-box3 .wptb-item--image {
     border-color: rgba(var(--color-white-rgb), 0.10);
 }
 
-.for-dark-bg .wptb-image-box3 .wptb-item--top {
+.home-style--five .for-dark-bg .wptb-image-box3 .wptb-item--top {
     background: rgba(23, 23, 23, 0.5);
 }
 
-.for-dark-bg .wptb-image-box3 .wptb-item--description {
+.home-style--five .for-dark-bg .wptb-image-box3 .wptb-item--description {
     color: var(--color-three);
 }
 
-.for-dark-bg .wptb-image-box3 .wptb-item--details {
+.home-style--five .for-dark-bg .wptb-image-box3 .wptb-item--details {
     color: var(--color-white);
 }
 
-.for-dark-bg .wptb-counter4 .wptb-item--value,
-.for-dark-bg .wptb-counter4 .wptb-item--title,
-.for-dark-bg .wptb-counter4 .wptb-item--text {
+.home-style--five .for-dark-bg .wptb-counter4 .wptb-item--value,
+.home-style--five .for-dark-bg .wptb-counter4 .wptb-item--title,
+.home-style--five .for-dark-bg .wptb-counter4 .wptb-item--text {
     color: var(--color-white);
 }
 
-.for-dark-bg .section-separator--two {
+.home-style--five .for-dark-bg .section-separator--two {
     background: #FFFFFF;
     background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%);
     background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%);
@@ -1456,14 +1456,14 @@ body.home-style--five,
     height: 1px;
 }
 
-.for-dark-bg .wptb-image-box4.wptb-image-box4--item1 .wptb-item--number,
-.for-dark-bg .wptb-image-box4.wptb-image-box4--item2 .wptb-item--number,
-.for-dark-bg .wptb-image-box4.wptb-image-box4--item3 .wptb-item--number {
+.home-style--five .for-dark-bg .wptb-image-box4.wptb-image-box4--item1 .wptb-item--number,
+.home-style--five .for-dark-bg .wptb-image-box4.wptb-image-box4--item2 .wptb-item--number,
+.home-style--five .for-dark-bg .wptb-image-box4.wptb-image-box4--item3 .wptb-item--number {
     background: rgba(var(--color-white-rgb), 0.05);
     border: 1px solid rgba(var(--color-white-rgb), 0.10);
 }
 
-.for-dark-bg.wptb-slider.style5 .wptb-heading .wptb-item--title .highlight {
+.home-style--five .for-dark-bg.wptb-slider.style5 .wptb-heading .wptb-item--title .highlight {
     color: var(--color-white);
     background: transparent;
     background-clip: unset;
@@ -1471,12 +1471,12 @@ body.home-style--five,
     -webkit-text-fill-color: inherit;
 }
 
-.for-dark-bg.wptb-slider.style5 .btn.two {
+.home-style--five .for-dark-bg.wptb-slider.style5 .btn.two {
     color: var(--color-white);
     background-color: rgba(var(--color-white-rgb), 0.05);
     border: 1px solid rgba(var(--color-white-rgb), 0.10);
 }
 
-.for-dark-bg .wptb-icon-box3.style5 .wptb-item--description {
+.home-style--five .for-dark-bg .wptb-icon-box3.style5 .wptb-item--description {
     color: rgba(var(--color-white-rgb), 0.6);
 }
