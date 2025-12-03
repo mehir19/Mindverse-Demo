@@ -1404,7 +1404,7 @@ body.home-style--five,
     color: var(--color-white);
 }
 
-.for-dark-bg.header.style5 .mainnav ul.main-menu li.active a {
+.for-dark-bg.header.style5 .mainnav ul.main-menu li.active > a {
     color: var(--color-blue);
 }
 
