@@ -882,6 +882,20 @@ body.left_menu .mr_menu {
   background-color: var(--color-white);
 }
 
+/* Header Style 6 */
+.header.style6 {
+  border-width: 0px;
+}
+
+.header.style6 .header-inner {
+  background-color: #161616;
+  padding: 10px 60px;
+  border-radius: 50px;
+}
+
+.header.style6 .mainnav ul.main-menu li a {
+  padding: 10px 0px;
+}
 
 @media screen and (max-width: 1366px) {
   .header .mainnav ul.main-menu > li + li {

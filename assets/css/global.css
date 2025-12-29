@@ -1,10 +1,96 @@
 :root {
-
     /* Font Family */
     --font-family-base: "Golos Text", sans-serif;
     --font-family-heading: "Space Grotesk", sans-serif;
     --font-family-three: "Inter", sans-serif;
     --font-family-four: "JetBrains Mono", monospace;
+    --font-family-five: "Mona Sans", sans-serif;
+    --font-family-six: "Geist", sans-serif;
+
+    /* Theme Colors */
+    --color-one:                #1F4CFF;
+    --color-one-rgb:             31, 76, 255;
+
+    --color-two:                #7932FF;
+    --color-two-rgb:            121, 50, 255;
+
+    --color-three:              #A4A7AE;
+    --color-three-rgb:          164, 167, 174;
+    
+    --color-four:              #F97316;
+    --color-four-rgb:          249, 115, 22;
+
+    --color-dark:               #000212;
+    --color-dark-rgb:           0, 2, 18;
+
+    --color-dark-two:           #181A0F;
+    --color-dark-two-rgb:       24, 26, 15;
+
+    --color-dark-three:           #081336;
+    --color-dark-three-rgb:       8, 19, 54;
+
+    --color-dark-four:           #64698E;
+    --color-dark-four-rgb:       100, 105, 142;
+
+    --color-dark-five:           #181D27;
+    --color-dark-five-rgb:       24, 29, 39;
+
+    --color-dark-six:           #060F16;
+    --color-dark-six-rgb:       6, 15, 22;
+    
+    --color-dark-seven:           #626262;
+    --color-dark-seven-rgb:       98, 98, 98;
+
+    --color-light:              #D5D7DA;
+    --color-light-rgb:          213, 215, 218;
+    
+    
+    --color-white:              #FFFFFF;
+    --color-white-rgb:          255, 255, 255;
+    
+    --color-black:              #000000;
+    --color-black-rgb:          0, 0, 0;
+    
+    --color-muted:              #5F6A77;
+    
+    --color-green:              #CDF683;
+    --color-green-rgb:          205, 246, 131;
+    
+    --color-green-two:          #00FFAE;
+    --color-green-two-rgb:       0, 255, 174;
+ 
+    --color-green-three:        #A8FFBB;
+    --color-green-three-rgb:    168, 255, 187;
+    
+    --color-green-four:        #BFF747;
+    --color-green-four-rgb:    191, 247, 71;
+
+    --color-light-green:        #F7F7F0;
+    --color-light-green-rgb:    247, 247, 240;
+    
+    --color-dark-green:           #002B2B;
+    --color-dark-green-rgb:       rgb(0, 43, 43);
+
+     --color-neon:              #E5FF5E;
+    --color-neon-rgb:           229, 255, 94;
+    
+    --color-blue:                #2563EB;
+    --color-blue-rgb:            37, 99, 235;
+
+    --link-color:               #000212;
+    --link-color-hover:         #1F4CFF;
+    --link-color-active:        #1F4CFF;
+
+    --gradient-color-from:      #272BEA;
+    --gradient-color-to:        #8B49D1;
+
+    --gradient-one: linear-gradient(0deg, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
+    --gradient-two: linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
+    --gradient-three: linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    --gradient-four: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(2, 42, 106, 1) 100%);
+    --gradient-five: linear-gradient(90deg,rgba(234, 88, 12, 1) 0%, rgba(249, 115, 22, 1) 50%, rgba(245, 158, 11, 1) 100%);
+    --gradient-six: linear-gradient(90deg,rgba(249, 116, 22, 1) 20%, rgba(245, 158, 11, 1) 68%);;
+    --gradient-radial: radial-gradient(circle, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
 
     /* Font Weight */
     --fw-lighter:         lighter;
@@ -156,86 +242,6 @@
     --fs-600:	    37.5rem;
     --fs-680:	    42.5rem;
 
-    /* Theme Colors */
-    --color-one:                #1F4CFF;
-    --color-one-rgb:             31, 76, 255;
-
-    --color-two:                #7932FF;
-    --color-two-rgb:            121, 50, 255;
-
-    --color-three:              #A4A7AE;
-    --color-three-rgb:          164, 167, 174;
-
-    --color-dark:               #000212;
-    --color-dark-rgb:           0, 2, 18;
-
-    --color-dark-two:           #181A0F;
-    --color-dark-two-rgb:       24, 26, 15;
-
-    --color-dark-three:           #081336;
-    --color-dark-three-rgb:       8, 19, 54;
-
-    --color-dark-four:           #64698E;
-    --color-dark-four-rgb:       100, 105, 142;
-
-    --color-dark-five:           #181D27;
-    --color-dark-five-rgb:       24, 29, 39;
-
-    --color-dark-six:           #060F16;
-    --color-dark-six-rgb:       6, 15, 22;
-    
-    --color-dark-seven:           #626262;
-    --color-dark-seven-rgb:       98, 98, 98;
-
-    --color-light:              #D5D7DA;
-    --color-light-rgb:          213, 215, 218;
-    
-    
-    --color-white:              #FFFFFF;
-    --color-white-rgb:          255, 255, 255;
-    
-    --color-black:              #000000;
-    --color-black-rgb:          0, 0, 0;
-    
-    --color-muted:              #5F6A77;
-    
-    --color-green:              #CDF683;
-    --color-green-rgb:          205, 246, 131;
-    
-    --color-green-two:          #00FFAE;
-    --color-green-two-rgb:       0, 255, 174;
- 
-    --color-green-three:        #A8FFBB;
-    --color-green-three-rgb:    168, 255, 187;
-    
-    --color-green-four:        #BFF747;
-    --color-green-four-rgb:    191, 247, 71;
-
-    --color-light-green:        #F7F7F0;
-    --color-light-green-rgb:    247, 247, 240;
-    
-    --color-dark-green:           #002B2B;
-    --color-dark-green-rgb:       rgb(0, 43, 43);
-
-     --color-neon:              #E5FF5E;
-    --color-neon-rgb:           229, 255, 94;
-    
-    --color-blue:                #2563EB;
-    --color-blue-rgb:            37, 99, 235;
-
-    --link-color:               #000212;
-    --link-color-hover:         #1F4CFF;
-    --link-color-active:        #1F4CFF;
-
-    --gradient-color-from:      #272BEA;
-    --gradient-color-to:        #8B49D1;
-
-    --gradient-one: linear-gradient(0deg, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
-    --gradient-two: linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
-    --gradient-three: linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
-    --gradient-four: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(2, 42, 106, 1) 100%);
-    --gradient-radial: radial-gradient(circle, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
-
     /* Responsive Breakdown */
     --breakpoint-extralargedesktop: 1399.98px;
     --breakpoint-largedesktop: 1199.98px;
@@ -346,6 +352,21 @@ main,
 
 .bg-gradient-one {
     background: var(--gradient-one);
+}
+.bg-gradient-two {
+    background: var(--gradient-two);
+}
+.bg-gradient-three {
+    background: var(--gradient-three);
+}
+.bg-gradient-four {
+    background: var(--gradient-four);
+}
+.bg-gradient-five {
+    background: var(--gradient-five);
+}
+.bg-gradient-six {
+    background: var(--gradient-six);
 }
 
 /* Text Set Class */
@@ -874,9 +895,16 @@ input[type="submit"]:hover{
 
 .btn.gradient7 {
     background: #BB7AE6;
-    background: -webkit-linear-gradient(90deg,rgba(18                                   7, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-linear-gradient(90deg,rgba(187, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
     background: -moz-linear-gradient(90deg,rgba(187, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
     background: linear-gradient(90deg,rgba(187, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+}
+
+.btn.gradient8 {
+    background: #BB7AE6;
+    background: -webkit-linear-gradient(90deg,rgba(234, 88, 12, 1) 0%, rgba(249, 115, 22, 1) 50%, rgba(245, 158, 11, 1) 100%);
+    background: -moz-linear-gradient(90deg,rgba(234, 88, 12, 1) 0%, rgba(249, 115, 22, 1) 50%, rgba(245, 158, 11, 1) 100%);
+    background: linear-gradient(90deg,rgba(234, 88, 12, 1) 0%, rgba(249, 115, 22, 1) 50%, rgba(245, 158, 11, 1) 100%);
 }
 
 .btn.glossy {
