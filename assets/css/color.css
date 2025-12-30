@@ -1484,8 +1484,14 @@ body.home-style--five,
 
 /* Home Style Six */
 body.home-style--six {
+    background-color: #FFF9F2;
     font-family: var(--font-family-five);
 }
+
+body.home-style--six.bg-black {
+    color: var(--color-three);
+}
+
 .home-style--six h1, .home-style--six h2, .home-style--six h3, .home-style--six h4, .home-style--six h5, .home-style--six h6,
 .home-style--six .h1, .home-style--six .h2, .home-style--six .h3, .home-style--six .h4, .home-style--six .h5, .home-style--six .h6{
     font-family: var(--font-family-three);
@@ -1497,10 +1503,64 @@ body.home-style--six {
     color: var(--color-white);
 }
 
+.home-style--six .wptb-heading .wptb-item--subtitle {
+    color: var(--color-black);
+    font-size: var(--fs-14);
+    line-height: var(--fs-18);
+    text-transform: capitalize;
+    letter-spacing: 0;
+    border: 1px solid rgba(140, 140, 140, 0.3);
+    padding: 3px;
+    padding-right: 13px;
+}
+
+.home-style--six .wptb-heading .wptb-item--subtitle span {
+    background: var(--gradient-five);
+    padding: 8px 16px;
+    margin-right: 10px;
+}
+
+.home-style--six .wptb-slider .wptb-heading .wptb-item--subtitle {
+    color: #E4621E;
+    background-color: #FFE9D7;
+    border: 1px solid #FBC792;
+    text-transform: capitalize;
+    padding: 3px 4px;
+    padding-left: 25px;
+    letter-spacing: 0;
+}
+
+.home-style--six .wptb-slider .wptb-heading .wptb-item--subtitle span {
+    background: var(--color-white);
+}
+
+.home-style--six .wptb-slider .wptb-heading .wptb-item--description {
+    font-weight: var(--fw-normal);
+    padding: 30px 0px;
+}
+
+.home-style--six .wptb-slider .wptb-image-single .image2,
+.home-style--six .wptb-slider .wptb-image-single .image3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+
+.home-style--six .wptb-slider .wptb-image-single .image2 {
+    transform: translate(-50%, -50%) rotate(6deg);
+}
+
+.home-style--six .wptb-slider .wptb-image-single .image3 {
+    transform: translate(-50%, -50%) rotate(15deg);
+}
+
 .home-style--six input[type="submit"], 
 .home-style--six .btn {
     font-family: var(--font-family-three);
     text-transform: capitalize;
+    padding: 13px 18px;
+    letter-spacing: 0px;
 
 }
 

@@ -105,12 +105,12 @@ Description: Mindverse - HTML Template
         var SwiperTestimonial = new Swiper('.swiper-testimonial', {
             loop: true,
             autoplay: {
-                delay: 4000,
+                delay: 2000,
             },
-            speed: 1500,
+            speed: 3000,
             slidesPerView: 1,
-            centeredSlides: true,
-            spaceBetween: 10,            
+            // centeredSlides: true,
+            spaceBetween: 30,            
             navigation: {
                 nextEl: '.swiper-testimonial-button-next',
                 prevEl: '.swiper-testimonial-button-prev',
@@ -127,62 +127,8 @@ Description: Mindverse - HTML Template
                 768: {
                   slidesPerView: 3,
                 },
-            }
-        });
-        
-        // Testimonial Two
-        var SwiperTestimonialTwo = new Swiper('.swiper-testimonial-two', {
-            loop: true,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false
-            },
-            speed: 15000,
-            freeMode: true,
-            slidesPerView: 1,
-            centeredSlides: false,
-            spaceBetween: 30,            
-            navigation: {
-                nextEl: '.swiper-testimonial-two-button-next',
-                prevEl: '.swiper-testimonial-two-button-prev',
-            },
-            pagination: {
-                el: '.swiper-testimonial-two-pagination',
-                clickable: true
-            },
-            
-            breakpoints: {
                 1200: {
-                  slidesPerView: 2,
-                },
-            }
-        });
-        
-        // Testimonial Two Reverse
-        var SwiperTestimonialTwoReverse = new Swiper('.swiper-testimonial-two-reverse', {
-            loop: true,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-                reverseDirection: true,
-            },
-            speed: 15000,
-            freeMode: true,
-            slidesPerView: 1,
-            centeredSlides: false,
-            spaceBetween: 30,            
-            navigation: {
-                nextEl: '.swiper-testimonial-two-button-next',
-                prevEl: '.swiper-testimonial-two-button-prev',
-            },
-            pagination: {
-                el: '.swiper-testimonial-two-pagination',
-                clickable: true
-            },
-            
-            breakpoints: {
-                1200: {
-                  slidesPerView: 2,
+                  slidesPerView: 4,
                 },
             }
         });

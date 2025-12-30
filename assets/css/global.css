@@ -392,6 +392,30 @@ main,
     color: var(--color-muted);
 }
 
+
+.text-gradient {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-one {
+    background-image: var(--gradient-one);
+}
+.text-gradient-two {
+    background-image: var(--gradient-two);
+}
+.text-gradient-three {
+    background-image: var(--gradient-three);
+}
+.text-gradient-four {
+    background-image: var(--gradient-four);
+}
+.text-gradient-five {
+    background-image: var(--gradient-five);
+}
+
 /* Heading Tag Preset */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
@@ -852,15 +876,17 @@ input[type="submit"]:hover{
 
 .btn.gradient {
     background: radial-gradient(circle,rgba(39, 43, 234, 1) 0%, rgba(139, 73, 209, 1) 100%);
-    border: 1px solid transparent;
+    border-color: transparent;
     box-shadow: inset 0px 1px 1px 0px rgba(var(--color-white-rgb), 0.18);
+    color: var(--color-white);
 }
 
 .btn.gradient2 {
     background: #00FFAE;
     background: radial-gradient(circle, rgba(0, 255, 174, 1) 0%, rgba(0, 55, 255, 1) 100%);
-    border: 1px solid transparent;
+    border-color: transparent;
     box-shadow: inset 0px 4px 1px 0px rgba(var(--color-white-rgb), 0.14);
+    color: var(--color-black);
 }
 
 .btn.gradient3 {
@@ -869,6 +895,8 @@ input[type="submit"]:hover{
     background: -moz-linear-gradient(90deg, rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
     background: linear-gradient(90deg, rgba(0, 255, 174, 1) 0%, rgba(0, 192, 255, 1) 100%);
     box-shadow: inset 0px 4px 1px 0px rgba(var(--color-white-rgb), 0.14);
+    border-color: transparent;
+    color: var(--color-black);
 }
 
 .btn.gradient4 {
@@ -876,6 +904,8 @@ input[type="submit"]:hover{
     background: -webkit-linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
     background: -moz-linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
     background: linear-gradient(180deg, rgba(23, 78, 73, 1) 0%, rgba(5, 32, 41, 1) 100%);
+    border-color: transparent;
+    color: var(--color-white);
 }
 
 .btn.gradient5 {
@@ -883,6 +913,8 @@ input[type="submit"]:hover{
     background: -webkit-linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
     background: -moz-linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
     background: linear-gradient(180deg, rgba(28, 47, 65, 1) 0%, rgba(6, 15, 22, 1) 100%);
+    border-color: transparent;
+    color: var(--color-white);
 }
 
 .btn.gradient6 {
@@ -891,6 +923,8 @@ input[type="submit"]:hover{
     background: -webkit-linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
     background: -moz-linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
     background: linear-gradient(0deg,rgba(150, 207, 29, 1) 8%, rgba(191, 247, 71, 1) 99%);
+    border-color: transparent;
+    color: var(--color-black);
 }
 
 .btn.gradient7 {
@@ -898,13 +932,17 @@ input[type="submit"]:hover{
     background: -webkit-linear-gradient(90deg,rgba(187, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
     background: -moz-linear-gradient(90deg,rgba(187, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
     background: linear-gradient(90deg,rgba(187, 122, 230, 1) 5%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
+    border-color: transparent;
+    color: var(--color-black);
 }
 
 .btn.gradient8 {
-    background: #BB7AE6;
+    background: #ea580c;
     background: -webkit-linear-gradient(90deg,rgba(234, 88, 12, 1) 0%, rgba(249, 115, 22, 1) 50%, rgba(245, 158, 11, 1) 100%);
     background: -moz-linear-gradient(90deg,rgba(234, 88, 12, 1) 0%, rgba(249, 115, 22, 1) 50%, rgba(245, 158, 11, 1) 100%);
     background: linear-gradient(90deg,rgba(234, 88, 12, 1) 0%, rgba(249, 115, 22, 1) 50%, rgba(245, 158, 11, 1) 100%);
+    border-color: transparent;
+    color: var(--color-black);
 }
 
 .btn.glossy {

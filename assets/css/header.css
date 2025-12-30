@@ -884,7 +884,13 @@ body.left_menu .mr_menu {
 
 /* Header Style 6 */
 .header.style6 {
+  top: 24px;
   border-width: 0px;
+}
+
+.header.style6.sticky {
+  top: 0;
+  background-color: #161616;
 }
 
 .header.style6 .header-inner {

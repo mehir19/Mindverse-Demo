@@ -3084,3 +3084,27 @@
     line-height: 28px;
     margin-bottom: 10px;
 }
+
+.swiper-testimonial .swiper-slide {
+    height: auto;
+}
+
+.home-style--six .wptb-text-marquee3 .wptb-item--text {
+    background: var(--color-white);
+}
+
+.home-style--six .wptb-country-marquee-wrapper::before {
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(255 238 218) 0%, rgb(255, 255, 255, 0) 100%);
+}
+
+.home-style--six .wptb-country-marquee-wrapper::after {
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(270deg, rgb(255 238 218) 0%, rgb(255, 255, 255, 0) 100%);
+}
