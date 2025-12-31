@@ -903,6 +903,10 @@ body.left_menu .mr_menu {
   padding: 10px 0px;
 }
 
+.header.style6 .mainnav ul.main-menu li ul li a {
+    color: var(--color-black);
+}
+
 @media screen and (max-width: 1366px) {
   .header .mainnav ul.main-menu > li + li {
     margin-left: 35px;

@@ -52,6 +52,7 @@
     --color-black-rgb:          0, 0, 0;
     
     --color-muted:              #5F6A77;
+    --color-muted-rgb:            95, 106, 119;
     
     --color-green:              #CDF683;
     --color-green-rgb:          205, 246, 131;
@@ -89,7 +90,8 @@
     --gradient-three: linear-gradient(150deg,rgba(187, 122, 230, 1) 0%, rgba(37, 99, 235, 1) 27%, rgba(0, 0, 0, 1) 100%);
     --gradient-four: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(2, 42, 106, 1) 100%);
     --gradient-five: linear-gradient(90deg,rgba(234, 88, 12, 1) 0%, rgba(249, 115, 22, 1) 50%, rgba(245, 158, 11, 1) 100%);
-    --gradient-six: linear-gradient(90deg,rgba(249, 116, 22, 1) 20%, rgba(245, 158, 11, 1) 68%);;
+    --gradient-six: linear-gradient(90deg,rgba(249, 116, 22, 1) 20%, rgba(245, 158, 11, 1) 68%);
+    --gradient-seven: linear-gradient( 0deg, rgba(114, 114, 114, 0.22) 0%, rgba(64, 64, 64, 0.22) 100%);
     --gradient-radial: radial-gradient(circle, rgba(var(--gradient-color-from), 1) 0%, rgba(var(--gradient-color-to), 1) 100%);
 
     /* Font Weight */
@@ -367,6 +369,9 @@ main,
 }
 .bg-gradient-six {
     background: var(--gradient-six);
+}
+.bg-gradient-seven {
+    background: var(--gradient-seven);
 }
 
 /* Text Set Class */

@@ -573,7 +573,7 @@
 }
 
 
-/* Footer style 5 */
+/* Footer style 6 */
 .footer.style6 .footer-inner {
     position: relative;
     padding-top: 150px;
@@ -620,4 +620,104 @@
     justify-content: center;
     border: 1px solid var(--color-white);
     border-radius: 100%;
+}
+
+
+/* Footer style 7 */
+.footer.style7 {
+    padding: 0px 45px;
+}
+
+.footer.style7 .footer-inner {
+    background: #FFDBB6;
+    background: -webkit-linear-gradient(180deg, rgba(255, 219, 182, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(255, 219, 182, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 219, 182, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.footer.style7 .footer-top {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+.footer.style7 .widget-title {
+    color: var(--color-black);
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: var(--fw-semibold);
+    text-transform: capitalize;
+    letter-spacing: 0px;
+}
+
+.footer.style7 .footer-nav li {
+    color: var(--color-muted);
+    position: relative;
+    font-family: var(--font-family-three);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: var(--fw-semibold);
+}
+
+.footer.style7 .footer-nav li + li {
+    margin-top: 22px;
+}
+
+.footer.style7 ul li a:not(:hover) {
+    color: inherit;
+}
+
+.footer.style7 ul li a:hover {
+    color: var(--color-four);
+}
+
+.footer.style7 .footer-bottom {
+    padding: 30px 0px 50px;
+}
+
+.footer.style7 .copyright {
+    color: var(--color-dark-seven);
+}
+
+.footer.style7 .copyright a {
+    color: inherit
+}
+
+.footer.style7 .wptb-social-box {
+    margin-top: 40px;
+}
+
+.footer.style7 .wptb-social-box ul {
+    gap: 8px;
+}
+
+.footer.style7 .wptb-social-box ul li a {
+    color: var(--color-black);
+    background-color: rgba(var(--color-white-rgb), 0.15);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-medium);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.footer.style7 .footer-lg-text {
+    font-family: var(--font-family-three);
+    font-size: clamp(5rem, 18vw + 2rem, 21.25rem);
+    line-height: 1;
+    font-weight: var(--fw-semibold);
+    letter-spacing: -11px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url('../img/background/bg-19.jpg');
+    text-align: center;
 }
